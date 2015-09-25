@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* PublicTransportAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PublicTransportAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TransportTypesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TransportTypesView.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* TransportTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TransportTypesViewController.m */; };
+		8457995F131BF75F00EDC6F0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8457995D131BF75F00EDC6F0 /* icon.png */; };
+		84579960131BF75F00EDC6F0 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8457995E131BF75F00EDC6F0 /* icon@2x.png */; };
+		8477F2741322A9F100ED4A81 /* ic_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8477F2731322A9F100ED4A81 /* ic_bus.png */; };
+		8477F27B1322E27700ED4A81 /* StopsViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */; };
+		8477F2EA1322FA2700ED4A81 /* StopSchedulesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */; };
+		8477F31713238C5600ED4A81 /* StopScheduleHeaderGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F31613238C5600ED4A81 /* StopScheduleHeaderGradientView.m */; };
+		848414F913210DB200E64339 /* StopsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848414F813210DB200E64339 /* StopsViewCell.xib */; };
+		848414FB13210DBD00E64339 /* StopSchedulesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */; };
+		8484156C1321335600E64339 /* RoutesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8484156B1321335600E64339 /* RoutesViewHeader.xib */; };
+		848415EF13214D8600E64339 /* DirectionsViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848415EE13214D8600E64339 /* DirectionsViewHeader.xib */; };
+		8488D6881336A35D00D29132 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488D6871336A35D00D29132 /* libsqlite3.0.dylib */; };
+		8488D68E1336AB2C00D29132 /* schedule.db in Resources */ = {isa = PBXBuildFile; fileRef = 8488D68D1336AB2C00D29132 /* schedule.db */; };
+		8488D6A31336B3D400D29132 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D69E1336B3D400D29132 /* FMDatabase.m */; };
+		8488D6A41336B3D400D29132 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6A01336B3D400D29132 /* FMDatabaseAdditions.m */; };
+		8488D6A51336B3D400D29132 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6A21336B3D400D29132 /* FMResultSet.m */; };
+		8488D6AD1336B7A100D29132 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6AC1336B7A100D29132 /* DatabaseManager.m */; };
+		848BF1C0135CDA3B00896867 /* FavouriteRoutesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848BF1BE135CDA3B00896867 /* FavouriteRoutesController.m */; };
+		848BF1C1135CDA3B00896867 /* FavouriteRoutesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848BF1BF135CDA3B00896867 /* FavouriteRoutesView.xib */; };
+		848BF1C5135CDA4800896867 /* FavouriteStopsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848BF1C3135CDA4800896867 /* FavouriteStopsController.m */; };
+		848BF1C6135CDA4800896867 /* FavouriteStopsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848BF1C4135CDA4800896867 /* FavouriteStopsView.xib */; };
+		848DFE44134DABD20024B7BA /* StopMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DFE42134DABD20024B7BA /* StopMapController.m */; };
+		848DFE45134DABD20024B7BA /* StopMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DFE43134DABD20024B7BA /* StopMapView.xib */; };
+		848E478B1315A3E500702554 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E47891315A3E500702554 /* RoutesViewController.m */; };
+		848E478C1315A3E500702554 /* RoutesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E478A1315A3E500702554 /* RoutesView.xib */; };
+		848E47C31315B19B00702554 /* RouteNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E47C21315B19B00702554 /* RouteNavigationController.m */; };
+		848FA3C81315120600F58900 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FA3C71315120600F58900 /* GradientView.m */; };
+		848FA3EE13151A9B00F58900 /* ic_trolleybus.png in Resources */ = {isa = PBXBuildFile; fileRef = 848FA3ED13151A9B00F58900 /* ic_trolleybus.png */; };
+		848FA3F013151AAB00F58900 /* ic_tram.png in Resources */ = {isa = PBXBuildFile; fileRef = 848FA3EF13151AAB00F58900 /* ic_tram.png */; };
+		848FA459131560A900F58900 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FA457131560A900F58900 /* FavoritesViewController.m */; };
+		848FA45A131560A900F58900 /* FavoritesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FA458131560A900F58900 /* FavoritesView.xib */; };
+		8490D5DB131BD4100036E4AE /* ic_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8490D5D9131BD4100036E4AE /* ic_home.png */; };
+		8490D5DC131BD4100036E4AE /* ic_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8490D5DA131BD4100036E4AE /* ic_home@2x.png */; };
+		8490D5ED131BD84B0036E4AE /* TransportType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D5EC131BD84B0036E4AE /* TransportType.m */; };
+		8490D635131BDD850036E4AE /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D634131BDD850036E4AE /* Route.m */; };
+		8490D638131BDFBC0036E4AE /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D637131BDFBC0036E4AE /* Direction.m */; };
+		8490D63B131BE03E0036E4AE /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D63A131BE03E0036E4AE /* Stop.m */; };
+		8490D63E131BE0F10036E4AE /* StopSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D63D131BE0F10036E4AE /* StopSchedule.m */; };
+		8494FDBC134A5BB800E90166 /* RouteMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494FDBA134A5BB800E90166 /* RouteMapController.m */; };
+		8494FDBD134A5BB800E90166 /* RouteMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494FDBB134A5BB800E90166 /* RouteMapView.xib */; };
+		8494FDCA134A5C9300E90166 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8494FDC9134A5C9300E90166 /* MapKit.framework */; };
+		84C97AF1131D24F1003A1990 /* RoutesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */; };
+		84EEB16313203E44003A961D /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB16113203E44003A961D /* DirectionsViewController.m */; };
+		84EEB16413203E44003A961D /* DirectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB16213203E44003A961D /* DirectionsView.xib */; };
+		84EEB168132040DA003A961D /* StopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB166132040DA003A961D /* StopsViewController.m */; };
+		84EEB169132040DA003A961D /* StopsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB167132040DA003A961D /* StopsView.xib */; };
+		84EEB17713204491003A961D /* StopSchedulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB17513204491003A961D /* StopSchedulesViewController.m */; };
+		84EEB17813204491003A961D /* StopSchedulesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB17613204491003A961D /* StopSchedulesView.xib */; };
+		84EEB1AA132049D1003A961D /* DirectionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */; };
+		84EEB1B613205046003A961D /* ic_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1B413205046003A961D /* ic_map.png */; };
+		84EEB1B713205046003A961D /* ic_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1B513205046003A961D /* ic_map@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* PublicTransportAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTransportAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* PublicTransportAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTransportAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* PublicTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TransportTypesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTypesView.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TransportTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportTypesViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TransportTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportTypesViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* PublicTransport_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTransport_Prefix.pch; sourceTree = "<group>"; };
+		8457995D131BF75F00EDC6F0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8457995E131BF75F00EDC6F0 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		8477F2731322A9F100ED4A81 /* ic_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bus.png; sourceTree = "<group>"; };
+		8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsViewHeader.xib; sourceTree = "<group>"; };
+		8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopSchedulesViewHeader.xib; sourceTree = "<group>"; };
+		8477F31513238C5600ED4A81 /* StopScheduleHeaderGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopScheduleHeaderGradientView.h; sourceTree = "<group>"; };
+		8477F31613238C5600ED4A81 /* StopScheduleHeaderGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopScheduleHeaderGradientView.m; sourceTree = "<group>"; };
+		848414F813210DB200E64339 /* StopsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsViewCell.xib; sourceTree = "<group>"; };
+		848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopSchedulesViewCell.xib; sourceTree = "<group>"; };
+		8484156B1321335600E64339 /* RoutesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesViewHeader.xib; sourceTree = "<group>"; };
+		848415EE13214D8600E64339 /* DirectionsViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewHeader.xib; sourceTree = "<group>"; };
+		8488D6871336A35D00D29132 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		8488D68D1336AB2C00D29132 /* schedule.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = schedule.db; sourceTree = "<group>"; };
+		8488D69D1336B3D400D29132 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		8488D69E1336B3D400D29132 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		8488D69F1336B3D400D29132 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		8488D6A01336B3D400D29132 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		8488D6A11336B3D400D29132 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		8488D6A21336B3D400D29132 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		8488D6AB1336B7A100D29132 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		8488D6AC1336B7A100D29132 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		848BF1BD135CDA3B00896867 /* FavouriteRoutesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteRoutesController.h; sourceTree = "<group>"; };
+		848BF1BE135CDA3B00896867 /* FavouriteRoutesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteRoutesController.m; sourceTree = "<group>"; };
+		848BF1BF135CDA3B00896867 /* FavouriteRoutesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteRoutesView.xib; path = Classes/FavouriteRoutesView.xib; sourceTree = "<group>"; };
+		848BF1C2135CDA4800896867 /* FavouriteStopsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteStopsController.h; sourceTree = "<group>"; };
+		848BF1C3135CDA4800896867 /* FavouriteStopsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteStopsController.m; sourceTree = "<group>"; };
+		848BF1C4135CDA4800896867 /* FavouriteStopsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteStopsView.xib; path = Classes/FavouriteStopsView.xib; sourceTree = "<group>"; };
+		848DFE41134DABD20024B7BA /* StopMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopMapController.h; sourceTree = "<group>"; };
+		848DFE42134DABD20024B7BA /* StopMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopMapController.m; sourceTree = "<group>"; };
+		848DFE43134DABD20024B7BA /* StopMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StopMapView.xib; path = Classes/StopMapView.xib; sourceTree = "<group>"; };
+		848E47881315A3E500702554 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		848E47891315A3E500702554 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
+		848E478A1315A3E500702554 /* RoutesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RoutesView.xib; path = Classes/RoutesView.xib; sourceTree = "<group>"; };
+		848E47C11315B19B00702554 /* RouteNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteNavigationController.h; sourceTree = "<group>"; };
+		848E47C21315B19B00702554 /* RouteNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteNavigationController.m; sourceTree = "<group>"; };
+		848FA3C61315120600F58900 /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		848FA3C71315120600F58900 /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		848FA3ED13151A9B00F58900 /* ic_trolleybus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_trolleybus.png; sourceTree = "<group>"; };
+		848FA3EF13151AAB00F58900 /* ic_tram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_tram.png; sourceTree = "<group>"; };
+		848FA456131560A900F58900 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		848FA457131560A900F58900 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		848FA458131560A900F58900 /* FavoritesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavoritesView.xib; path = Classes/FavoritesView.xib; sourceTree = "<group>"; };
+		8490D5D9131BD4100036E4AE /* ic_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home.png; sourceTree = "<group>"; };
+		8490D5DA131BD4100036E4AE /* ic_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_home@2x.png"; sourceTree = "<group>"; };
+		8490D5EB131BD84B0036E4AE /* TransportType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportType.h; sourceTree = "<group>"; };
+		8490D5EC131BD84B0036E4AE /* TransportType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportType.m; sourceTree = "<group>"; };
+		8490D633131BDD850036E4AE /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		8490D634131BDD850036E4AE /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		8490D636131BDFBC0036E4AE /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
+		8490D637131BDFBC0036E4AE /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Direction.m; sourceTree = "<group>"; };
+		8490D639131BE03E0036E4AE /* Stop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stop.h; sourceTree = "<group>"; };
+		8490D63A131BE03E0036E4AE /* Stop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stop.m; sourceTree = "<group>"; };
+		8490D63C131BE0F10036E4AE /* StopSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopSchedule.h; sourceTree = "<group>"; };
+		8490D63D131BE0F10036E4AE /* StopSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopSchedule.m; sourceTree = "<group>"; };
+		8494FDB9134A5BB800E90166 /* RouteMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMapController.h; sourceTree = "<group>"; };
+		8494FDBA134A5BB800E90166 /* RouteMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMapController.m; sourceTree = "<group>"; };
+		8494FDBB134A5BB800E90166 /* RouteMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RouteMapView.xib; path = Classes/RouteMapView.xib; sourceTree = "<group>"; };
+		8494FDC9134A5C9300E90166 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesViewCell.xib; sourceTree = "<group>"; };
+		84EEB16013203E44003A961D /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		84EEB16113203E44003A961D /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		84EEB16213203E44003A961D /* DirectionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DirectionsView.xib; path = Classes/DirectionsView.xib; sourceTree = "<group>"; };
+		84EEB165132040DA003A961D /* StopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopsViewController.h; sourceTree = "<group>"; };
+		84EEB166132040DA003A961D /* StopsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopsViewController.m; sourceTree = "<group>"; };
+		84EEB167132040DA003A961D /* StopsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StopsView.xib; path = Classes/StopsView.xib; sourceTree = "<group>"; };
+		84EEB17413204491003A961D /* StopSchedulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopSchedulesViewController.h; sourceTree = "<group>"; };
+		84EEB17513204491003A961D /* StopSchedulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopSchedulesViewController.m; sourceTree = "<group>"; };
+		84EEB17613204491003A961D /* StopSchedulesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StopSchedulesView.xib; path = Classes/StopSchedulesView.xib; sourceTree = "<group>"; };
+		84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewCell.xib; sourceTree = "<group>"; };
+		84EEB1B413205046003A961D /* ic_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_map.png; sourceTree = "<group>"; };
+		84EEB1B513205046003A961D /* ic_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_map@2x.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* PublicTransport-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PublicTransport-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				8488D6881336A35D00D29132 /* libsqlite3.0.dylib in Frameworks */,
+				8494FDCA134A5C9300E90166 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8494FDB8134A5BA100E90166 /* map */,
+				8485C8D21338DDFA00D898B3 /* favourites */,
+				8485C8D11338DDDD00D898B3 /* schedule */,
+				8488D6AA1336B78C00D29132 /* data */,
+				8488D6911336B39500D29132 /* fmdb */,
+				8477F31413238C0100ED4A81 /* gradients */,
+				8490D5EE131BD84F0036E4AE /* model */,
+				1D3623240D0F684500981E51 /* PublicTransportAppDelegate.h */,
+				1D3623250D0F684500981E51 /* PublicTransportAppDelegate.m */,
+				848E47C11315B19B00702554 /* RouteNavigationController.h */,
+				848E47C21315B19B00702554 /* RouteNavigationController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* PublicTransport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PublicTransport_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				848E48011315C03D00702554 /* views */,
+				848E48001315C01300702554 /* images */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8488D68D1336AB2C00D29132 /* schedule.db */,
+				8D1107310486CEB800E47090 /* PublicTransport-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				8488D6871336A35D00D29132 /* libsqlite3.0.dylib */,
+				8494FDC9134A5C9300E90166 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8477F31413238C0100ED4A81 /* gradients */ = {
+			isa = PBXGroup;
+			children = (
+				848FA3C61315120600F58900 /* GradientView.h */,
+				848FA3C71315120600F58900 /* GradientView.m */,
+				8477F31513238C5600ED4A81 /* StopScheduleHeaderGradientView.h */,
+				8477F31613238C5600ED4A81 /* StopScheduleHeaderGradientView.m */,
+			);
+			name = gradients;
+			sourceTree = "<group>";
+		};
+		84840C2F1353779300CED912 /* favourites */ = {
+			isa = PBXGroup;
+			children = (
+				848BF1BF135CDA3B00896867 /* FavouriteRoutesView.xib */,
+				848BF1C4135CDA4800896867 /* FavouriteStopsView.xib */,
+				848FA458131560A900F58900 /* FavoritesView.xib */,
+			);
+			name = favourites;
+			sourceTree = "<group>";
+		};
+		8485C8D11338DDDD00D898B3 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				84EEB16013203E44003A961D /* DirectionsViewController.h */,
+				84EEB16113203E44003A961D /* DirectionsViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* TransportTypesViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TransportTypesViewController.m */,
+				848E47881315A3E500702554 /* RoutesViewController.h */,
+				848E47891315A3E500702554 /* RoutesViewController.m */,
+				84EEB165132040DA003A961D /* StopsViewController.h */,
+				84EEB166132040DA003A961D /* StopsViewController.m */,
+				84EEB17413204491003A961D /* StopSchedulesViewController.h */,
+				84EEB17513204491003A961D /* StopSchedulesViewController.m */,
+			);
+			name = schedule;
+			sourceTree = "<group>";
+		};
+		8485C8D21338DDFA00D898B3 /* favourites */ = {
+			isa = PBXGroup;
+			children = (
+				848FA456131560A900F58900 /* FavoritesViewController.h */,
+				848FA457131560A900F58900 /* FavoritesViewController.m */,
+				848BF1BD135CDA3B00896867 /* FavouriteRoutesController.h */,
+				848BF1BE135CDA3B00896867 /* FavouriteRoutesController.m */,
+				848BF1C2135CDA4800896867 /* FavouriteStopsController.h */,
+				848BF1C3135CDA4800896867 /* FavouriteStopsController.m */,
+			);
+			name = favourites;
+			sourceTree = "<group>";
+		};
+		8488D6911336B39500D29132 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				8488D69D1336B3D400D29132 /* FMDatabase.h */,
+				8488D69E1336B3D400D29132 /* FMDatabase.m */,
+				8488D69F1336B3D400D29132 /* FMDatabaseAdditions.h */,
+				8488D6A01336B3D400D29132 /* FMDatabaseAdditions.m */,
+				8488D6A11336B3D400D29132 /* FMResultSet.h */,
+				8488D6A21336B3D400D29132 /* FMResultSet.m */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+		8488D6AA1336B78C00D29132 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8488D6AB1336B7A100D29132 /* DatabaseManager.h */,
+				8488D6AC1336B7A100D29132 /* DatabaseManager.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		848E48001315C01300702554 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8477F2731322A9F100ED4A81 /* ic_bus.png */,
+				84EEB1B413205046003A961D /* ic_map.png */,
+				84EEB1B513205046003A961D /* ic_map@2x.png */,
+				8457995D131BF75F00EDC6F0 /* icon.png */,
+				8457995E131BF75F00EDC6F0 /* icon@2x.png */,
+				8490D5D9131BD4100036E4AE /* ic_home.png */,
+				8490D5DA131BD4100036E4AE /* ic_home@2x.png */,
+				848FA3ED13151A9B00F58900 /* ic_trolleybus.png */,
+				848FA3EF13151AAB00F58900 /* ic_tram.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		848E48011315C03D00702554 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				84840C2F1353779300CED912 /* favourites */,
+				8494FDBF134A5BDD00E90166 /* map */,
+				8494FDBE134A5BD700E90166 /* schedule */,
+				84C97AF2131D24F7003A1990 /* table */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		8490D5EE131BD84F0036E4AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8490D5EB131BD84B0036E4AE /* TransportType.h */,
+				8490D5EC131BD84B0036E4AE /* TransportType.m */,
+				8490D633131BDD850036E4AE /* Route.h */,
+				8490D634131BDD850036E4AE /* Route.m */,
+				8490D636131BDFBC0036E4AE /* Direction.h */,
+				8490D637131BDFBC0036E4AE /* Direction.m */,
+				8490D639131BE03E0036E4AE /* Stop.h */,
+				8490D63A131BE03E0036E4AE /* Stop.m */,
+				8490D63C131BE0F10036E4AE /* StopSchedule.h */,
+				8490D63D131BE0F10036E4AE /* StopSchedule.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8494FDB8134A5BA100E90166 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				8494FDB9134A5BB800E90166 /* RouteMapController.h */,
+				8494FDBA134A5BB800E90166 /* RouteMapController.m */,
+				848DFE41134DABD20024B7BA /* StopMapController.h */,
+				848DFE42134DABD20024B7BA /* StopMapController.m */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		8494FDBE134A5BD700E90166 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* TransportTypesView.xib */,
+				84EEB16213203E44003A961D /* DirectionsView.xib */,
+				84EEB167132040DA003A961D /* StopsView.xib */,
+				84EEB17613204491003A961D /* StopSchedulesView.xib */,
+				848E478A1315A3E500702554 /* RoutesView.xib */,
+			);
+			name = schedule;
+			sourceTree = "<group>";
+		};
+		8494FDBF134A5BDD00E90166 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				848DFE43134DABD20024B7BA /* StopMapView.xib */,
+				8494FDBB134A5BB800E90166 /* RouteMapView.xib */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		84C97AF2131D24F7003A1990 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */,
+				84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */,
+				848414F813210DB200E64339 /* StopsViewCell.xib */,
+				848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */,
+				8484156B1321335600E64339 /* RoutesViewHeader.xib */,
+				848415EE13214D8600E64339 /* DirectionsViewHeader.xib */,
+				8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */,
+				8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */,
+			);
+			name = table;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Rigas Satiksme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Rigas Satiksme" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rigas Satiksme";
+			productName = PublicTransport;
+			productReference = 1D6058910D05DD3D006BFB54 /* PublicTransport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PublicTransport" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Rigas Satiksme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TransportTypesView.xib in Resources */,
+				848FA3EE13151A9B00F58900 /* ic_trolleybus.png in Resources */,
+				848FA3F013151AAB00F58900 /* ic_tram.png in Resources */,
+				848FA45A131560A900F58900 /* FavoritesView.xib in Resources */,
+				848E478C1315A3E500702554 /* RoutesView.xib in Resources */,
+				8490D5DB131BD4100036E4AE /* ic_home.png in Resources */,
+				8490D5DC131BD4100036E4AE /* ic_home@2x.png in Resources */,
+				8457995F131BF75F00EDC6F0 /* icon.png in Resources */,
+				84579960131BF75F00EDC6F0 /* icon@2x.png in Resources */,
+				84C97AF1131D24F1003A1990 /* RoutesViewCell.xib in Resources */,
+				84EEB16413203E44003A961D /* DirectionsView.xib in Resources */,
+				84EEB169132040DA003A961D /* StopsView.xib in Resources */,
+				84EEB17813204491003A961D /* StopSchedulesView.xib in Resources */,
+				84EEB1AA132049D1003A961D /* DirectionsViewCell.xib in Resources */,
+				84EEB1B613205046003A961D /* ic_map.png in Resources */,
+				84EEB1B713205046003A961D /* ic_map@2x.png in Resources */,
+				848414F913210DB200E64339 /* StopsViewCell.xib in Resources */,
+				848414FB13210DBD00E64339 /* StopSchedulesViewCell.xib in Resources */,
+				8484156C1321335600E64339 /* RoutesViewHeader.xib in Resources */,
+				848415EF13214D8600E64339 /* DirectionsViewHeader.xib in Resources */,
+				8477F2741322A9F100ED4A81 /* ic_bus.png in Resources */,
+				8477F27B1322E27700ED4A81 /* StopsViewHeader.xib in Resources */,
+				8477F2EA1322FA2700ED4A81 /* StopSchedulesViewHeader.xib in Resources */,
+				8488D68E1336AB2C00D29132 /* schedule.db in Resources */,
+				8494FDBD134A5BB800E90166 /* RouteMapView.xib in Resources */,
+				848DFE45134DABD20024B7BA /* StopMapView.xib in Resources */,
+				848BF1C1135CDA3B00896867 /* FavouriteRoutesView.xib in Resources */,
+				848BF1C6135CDA4800896867 /* FavouriteStopsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* PublicTransportAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TransportTypesViewController.m in Sources */,
+				848FA3C81315120600F58900 /* GradientView.m in Sources */,
+				848FA459131560A900F58900 /* FavoritesViewController.m in Sources */,
+				848E478B1315A3E500702554 /* RoutesViewController.m in Sources */,
+				848E47C31315B19B00702554 /* RouteNavigationController.m in Sources */,
+				8490D5ED131BD84B0036E4AE /* TransportType.m in Sources */,
+				8490D635131BDD850036E4AE /* Route.m in Sources */,
+				8490D638131BDFBC0036E4AE /* Direction.m in Sources */,
+				8490D63B131BE03E0036E4AE /* Stop.m in Sources */,
+				8490D63E131BE0F10036E4AE /* StopSchedule.m in Sources */,
+				84EEB16313203E44003A961D /* DirectionsViewController.m in Sources */,
+				84EEB168132040DA003A961D /* StopsViewController.m in Sources */,
+				84EEB17713204491003A961D /* StopSchedulesViewController.m in Sources */,
+				8477F31713238C5600ED4A81 /* StopScheduleHeaderGradientView.m in Sources */,
+				8488D6A31336B3D400D29132 /* FMDatabase.m in Sources */,
+				8488D6A41336B3D400D29132 /* FMDatabaseAdditions.m in Sources */,
+				8488D6A51336B3D400D29132 /* FMResultSet.m in Sources */,
+				8488D6AD1336B7A100D29132 /* DatabaseManager.m in Sources */,
+				8494FDBC134A5BB800E90166 /* RouteMapController.m in Sources */,
+				848DFE44134DABD20024B7BA /* StopMapController.m in Sources */,
+				848BF1C0135CDA3B00896867 /* FavouriteRoutesController.m in Sources */,
+				848BF1C5135CDA4800896867 /* FavouriteStopsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PublicTransport_Prefix.pch;
+				INFOPLIST_FILE = "PublicTransport-Info.plist";
+				PRODUCT_NAME = PublicTransport;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PublicTransport_Prefix.pch;
+				INFOPLIST_FILE = "PublicTransport-Info.plist";
+				PRODUCT_NAME = PublicTransport;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Rigas Satiksme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PublicTransport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

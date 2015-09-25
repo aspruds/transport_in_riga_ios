@@ -1,0 +1,1597 @@
+TRigas Satiksme
+v7
+r0
+t320950959.339708
+cCheck dependencies
+cProcessInfoPlistFile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Info.plist PublicTransport-Info.plist
+cCompileXIB /Users/admin/Documents/PublicTransport/MainWindow.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/TransportTypesView.xib
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_bus.png ../../.Trash/ic_bus.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_trolleybus.png ic_trolleybus.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_tram.png ic_tram.png
+cCompileXIB /Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/Classes/RoutesView.xib
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_home.png ic_home.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_home@2x.png ic_home@2x.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/icon.png icon.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/icon@2x.png icon@2x.png
+cCompileXIB /Users/admin/Documents/PublicTransport/RoutesViewCell.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopsView.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/DirectionsViewCell.xib
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_map.png ic_map.png
+cCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_map@2x.png ic_map@2x.png
+cCompileXIB /Users/admin/Documents/PublicTransport/StopsViewCell.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/RoutesViewHeader.xib
+cCompileXIB /Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib
+cProcessPCH /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch.gch PublicTransport_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/main.o" /Users/admin/Documents/PublicTransport/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportAppDelegate.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportTypesViewController.o" /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/GradientView.o" /Users/admin/Documents/PublicTransport/Classes/GradientView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesViewController.o" /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesViewController.o" /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RouteNavigationController.o" /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportType.o" /Users/admin/Documents/PublicTransport/Classes/TransportType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Route.o" /Users/admin/Documents/PublicTransport/Classes/Route.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Direction.o" /Users/admin/Documents/PublicTransport/Classes/Direction.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Stop.o" /Users/admin/Documents/PublicTransport/Classes/Stop.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedule.o" /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/DirectionsViewController.o" /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopsViewController.o" /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesViewController.o" /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport normal i386
+cGenerateDSYMFile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app.dSYM /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport
+cTouch /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/admin/Documents/PublicTransport/../../.Trash/ic_bus.png
+c000000004D449F3C0000000000000CA9
+t1296342844
+s3241
+
+N/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon.png
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon@2x.png
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/Classes/Direction.h
+c000000004D6CE5E30000000000000243
+t1298982371
+s579
+i<Foundation/Foundation.h>
+i"Route.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/Direction.m
+c000000004D6CE60A0000000000000232
+t1298982410
+s562
+i"Direction.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib
+c000000004D701109000000000000424B
+t1299190025
+s16971
+
+N/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.h
+c000000004D7119C40000000000000283
+t1299257796
+s643
+i<UIKit/UIKit.h>
+i"StopsViewController.h"
+i"Route.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m
+c000000004D711AC20000000000001050
+t1299258050
+s4176
+i"DirectionsViewController.h"
+i"Direction.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.xib
+c000000004D7006C40000000000001883
+t1299187396
+s6275
+
+N/Users/admin/Documents/PublicTransport/Classes/Favorites.h
+c000000004D65292900000000000000D2
+t1298475305
+s210
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/Favorites.m
+c000000004D652929000000000000058D
+t1298475305
+s1421
+i"Favorites.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/Favorites.xib
+c000000004D656B7600000000000044BB
+t1298492278
+s17595
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.h
+c000000004D656D0800000000000000DC
+t1298492680
+s220
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.m
+c000000004D656D5D00000000000005A1
+t1298492765
+s1441
+i"FavoritesController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib
+c000000004D656B7600000000000044BB
+t1298492278
+s17595
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib
+c000000004D6B986600000000000051EB
+t1298896998
+s20971
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.h
+c000000004D6587DE00000000000000E0
+t1298499550
+s224
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m
+c000000004D6587D300000000000005A9
+t1298499539
+s1449
+i"FavoritesViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/GradientView.h
+c000000004D64DA8600000000000000CE
+t1298455174
+s206
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/GradientView.m
+c000000004D64E296000000000000050C
+t1298457238
+s1292
+i"GradientView.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.h
+c000000004D694D9C00000000000002C8
+t1298746780
+s712
+i<UIKit/UIKit.h>
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m
+c000000004D694D100000000000000CF6
+t1298746640
+s3318
+i"PublicTransportAppDelegate.h"
+i"TransportTypesViewController.h"
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.h
+c000000004D65153A00000000000000FA
+t1298470202
+s250
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m
+c000000004D65153200000000000004AA
+t1298470194
+s1194
+i"PublicTransportViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/Route.h
+c000000004D71189A00000000000002D7
+t1299257498
+s727
+i<Foundation/Foundation.h>
+i"TransportType.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/Route.m
+c000000004D71188500000000000002B7
+t1299257477
+s695
+i"Route.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.h
+c000000004D657A2C00000000000000F8
+t1298496044
+s248
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m
+c000000004D657A1B0000000000000635
+t1298496027
+s1589
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.h
+c000000004D656C6500000000000000E0
+t1298492517
+s224
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.m
+c000000004D656C6500000000000005A2
+t1298492517
+s1442
+i"RoutesController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.xib
+c000000004D656C65000000000000186B
+t1298492517
+s6251
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesView.xib
+c000000004D70EBA900000000000046F1
+t1299245993
+s18161
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h
+c000000004D7119B600000000000002AC
+t1299257782
+s684
+i<UIKit/UIKit.h>
+i"DirectionsViewController.h"
+i"TransportType.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m
+c000000004D7119BE0000000000001287
+t1299257790
+s4743
+i"RoutesViewController.h"
+i"Route.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/Stop.h
+c000000004D6CE5C00000000000000237
+t1298982336
+s567
+i<Foundation/Foundation.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/Stop.m
+c000000004D6CE6530000000000000236
+t1298982483
+s566
+i"Stop.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedule.h
+c000000004D6CE752000000000000028C
+t1298982738
+s652
+i<Foundation/Foundation.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedule.m
+c000000004D6CF0C200000000000001F7
+t1298985154
+s503
+i"StopSchedule.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesController.h
+c000000004D700CF000000000000000ED
+t1299188976
+s237
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesController.m
+c000000004D700CF000000000000005B6
+t1299188976
+s1462
+i"StopSchedulesController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesController.xib
+c000000004D700CF00000000000001880
+t1299188976
+s6272
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib
+c000000004D70DF1500000000000045CF
+t1299242773
+s17871
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.h
+c000000004D70DECE000000000000015A
+t1299242702
+s346
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m
+c000000004D70DFE6000000000000061C
+t1299242982
+s1564
+i"StopSchedulesViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.xib
+c000000004D700D11000000000000188C
+t1299189009
+s6284
+
+N/Users/admin/Documents/PublicTransport/Classes/StopsView.xib
+c000000004D70DEF000000000000045B7
+t1299242736
+s17847
+
+N/Users/admin/Documents/PublicTransport/Classes/StopsViewController.h
+c000000004D70DEC9000000000000023F
+t1299242697
+s575
+i<UIKit/UIKit.h>
+i"StopSchedulesViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m
+c000000004D70FBAF0000000000000CA6
+t1299250095
+s3238
+i"StopsViewController.h"
+i"Stop.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/StopsViewController.xib
+c000000004D70095A0000000000001874
+t1299188058
+s6260
+
+N/Users/admin/Documents/PublicTransport/Classes/TransportType.h
+c000000004D7102870000000000000204
+t1299251847
+s516
+i<Foundation/Foundation.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/TransportType.m
+c000000004D7103ED00000000000001C5
+t1299252205
+s453
+i"TransportType.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.h
+c000000004D70D52200000000000001A6
+t1299240226
+s422
+i<UIKit/UIKit.h>
+i"RouteNavigationController.h"
+i"RoutesViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m
+c000000004D7103580000000000000AE9
+t1299252056
+s2793
+i"TransportTypesViewController.h"
+i"TransportType.h"
+
+N/Users/admin/Documents/PublicTransport/DirectionsViewCell.xib
+c000000004D70D9A50000000000005695
+t1299241381
+s22165
+
+N/Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib
+c000000004D711AA30000000000004B71
+t1299258019
+s19313
+
+N/Users/admin/Documents/PublicTransport/MainWindow.xib
+c000000004D6B9D890000000000008D97
+t1298898313
+s36247
+
+N/Users/admin/Documents/PublicTransport/PublicTransportViewController.xib
+c000000004D656F7700000000000062A7
+t1298493303
+s25255
+
+N/Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch
+c000000004D64D5B500000000000000C7
+t1298453941
+s199
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/RoutesViewCell.xib
+c000000004D70E9A40000000000005210
+t1299245476
+s21008
+
+N/Users/admin/Documents/PublicTransport/RoutesViewHeader.xib
+c000000004D711A450000000000004B62
+t1299257925
+s19298
+
+N/Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib
+c000000004D70DE0F0000000000003144
+t1299242511
+s12612
+
+N/Users/admin/Documents/PublicTransport/StopsViewCell.xib
+c000000004D70DDF900000000000054E0
+t1299242489
+s21728
+
+N/Users/admin/Documents/PublicTransport/TransportTypesView.xib
+c000000004D6BB172000000000000709B
+t1298903410
+s28827
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app
+t1299258159
+s918
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app.dSYM
+t1299258159
+s102
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsView.nib
+t1299258137
+s1000
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsViewCell.nib
+t1299258142
+s2136
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsViewController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsViewHeader.nib
+t1299258148
+s1258
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Favorites.nib
+t1298492286
+s1024
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/FavoritesController.nib
+t1298492640
+s1024
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/FavoritesView.nib
+t1299258131
+s1547
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Info.plist
+t1299258126
+s639
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/MainWindow.nib
+t1299258128
+s2744
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PkgInfo
+t1299258126
+s8
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport
+t1299258159
+s72108
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransportViewController.nib
+t1298495172
+s2054
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesController.nib
+t1298492642
+s764
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesView.nib
+t1299258133
+s1000
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesViewCell.nib
+t1299258135
+s1775
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesViewHeader.nib
+t1299258146
+s1258
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesView.nib
+t1299258140
+s1000
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesViewCell.nib
+t1299258145
+s1254
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesViewController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopsView.nib
+t1299258139
+s1000
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopsViewCell.nib
+t1299258143
+s2128
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopsViewController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/TransportTypesView.nib
+t1299258130
+s2680
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/home_30.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/home_60.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_bus.png
+t1299258130
+s3241
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_home.png
+t1299258133
+s3003
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_home@2x.png
+t1299258133
+s3272
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_map
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_map.png
+t1299258142
+s2213
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_map@2x.png
+t1299258142
+s5390
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_tram.png
+t1299258130
+s3100
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/ic_trolleybus.png
+t1299258130
+s3994
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/icon.png
+t1299258133
+s2061
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/icon@2x.png
+t1299258133
+s4911
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/map.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/map@2x.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Direction.o
+t1299258156
+s12536
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/DirectionsViewController.o
+t1299258157
+s55020
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Favorites.o
+t1298491449
+s37448
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesController.o
+t1298492769
+s37660
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesViewController.o
+t1299258153
+s37744
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/GradientView.o
+t1299258153
+s39624
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransport.LinkFileList
+c000000004D711B0E00000000000008C6
+t1299258126
+s2246
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportAppDelegate.o
+t1299258152
+s56792
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportViewController.o
+t1298492645
+s37668
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Route.o
+t1299258155
+s13552
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RouteNavigationController.o
+t1299258154
+s39500
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesController.o
+t1298492647
+s37596
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesViewController.o
+t1299258154
+s56480
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Stop.o
+t1299258156
+s11852
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedule.o
+t1299258157
+s13652
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesViewController.o
+t1299258158
+s40608
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopsViewController.o
+t1299258158
+s49576
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportType.o
+t1299258155
+s10100
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportTypesViewController.o
+t1299258152
+s46632
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/main.o
+t1299258151
+s6304
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Direction.plist
+t1299252197
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/DirectionsViewController.plist
+t1299252198
+s4753
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/FavoritesViewController.plist
+t1298905962
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/GradientView.plist
+t1298905962
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/PublicTransportAppDelegate.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Route.plist
+t1299252197
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/RouteNavigationController.plist
+t1298905963
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/RoutesViewController.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Stop.plist
+t1299252198
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopSchedule.plist
+t1299252198
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopSchedulesViewController.plist
+t1299252199
+s276
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopsViewController.plist
+t1299252198
+s4730
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/TransportType.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/TransportTypesViewController.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/main.plist
+t1298905961
+s276
+
+N/Users/admin/Documents/PublicTransport/home_30.png
+c000000004C59563A0000000000000BBB
+t1280923194
+s3003
+
+N/Users/admin/Documents/PublicTransport/home_60.png
+c000000004C59563E0000000000000CC8
+t1280923198
+s3272
+
+N/Users/admin/Documents/PublicTransport/ic_home.png
+c000000004C59563A0000000000000BBB
+t1280923194
+s3003
+
+N/Users/admin/Documents/PublicTransport/ic_home@2x.png
+c000000004C59563E0000000000000CC8
+t1280923198
+s3272
+
+N/Users/admin/Documents/PublicTransport/ic_map
+c000000004D7017F100000000000008A5
+t1299191793
+s2213
+
+N/Users/admin/Documents/PublicTransport/ic_map.png
+c000000004D7017F100000000000008A5
+t1299191793
+s2213
+
+N/Users/admin/Documents/PublicTransport/ic_map@2x.png
+c000000004D7017FD000000000000150E
+t1299191805
+s5390
+
+N/Users/admin/Documents/PublicTransport/ic_tram.png
+c000000004D51A8AF0000000000000C1C
+t1297197231
+s3100
+
+N/Users/admin/Documents/PublicTransport/ic_trolleybus.png
+c000000004D449C8E0000000000000F9A
+t1296342158
+s3994
+
+N/Users/admin/Documents/PublicTransport/icon.png
+c000000004D618DB3000000000000080D
+t1298238899
+s2061
+
+N/Users/admin/Documents/PublicTransport/icon@2x.png
+c000000004D6190A3000000000000132F
+t1298239651
+s4911
+
+N/Users/admin/Documents/PublicTransport/main.m
+c000000004D64D5B50000000000000165
+t1298453941
+s357
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/map.png
+c000000004D7017F100000000000008A5
+t1299191793
+s2213
+
+N/Users/admin/Documents/PublicTransport/map@2x.png
+c000000004D7017FD000000000000150E
+t1299191805
+s5390
+
+N/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch.pth
+t1298757057
+s2784036
+
+N/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch.gch
+t1299258150
+s10360536
+
+NPublicTransport-Info.plist
+c000000004D6567DC0000000000000397
+t1298491356
+s919
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/Direction.m
+s320944997.545485
+e320944997.943631
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/Direction.m
+lSLF07#2@66"Analyze /Users/admin/Documents/PublicTransport/Classes/Direction.m320944997#320944997#0(0"0(0#0#58"/Users/admin/Documents/PublicTransport/Classes/Direction.m2474001040#2108"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/Direction.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Direction.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m
+s320944998.445242
+e320944998.712781
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m
+o/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m:31:28: warning: Potential leak of an object allocated on line 31 and stored into 'directionOne'
+o         Direction* directionOne = [[Direction alloc] 
+o                                   ^
+o1 warning generated.
+lSLF07#2@81"Analyze /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320944998#320944998#0(283"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m:31:28: warning: Potential leak of an object allocated on line 31 and stored into 'directionOne'         Direction* directionOne = [[Direction alloc]                                    ^1 warning generated.1(0@79"Potential leak of an object allocated on line 31 and stored into 'directionOne'320944998#4294967295#0#4(17@0"320944998#4294967295#0#0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#0#0#0#0#0"0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#0#0#0#0#1(3@6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#31#2#31#2#6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#31#28#35#18#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)320944998#4294967295#0#0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#31#28#0#0#0"1(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#31#28#35#18#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"320944998#4294967295#0#0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#0#0#0#0#0"0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#0#0#0#0#1(3@6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#31#28#35#18#6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#39#2#39#2#21@144"Object allocated on line 31 and stored into 'directionOne' is no longer referenced after this point and has a retain count of +1 (object leaked)320944998#4294967295#0#0(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#39#2#0#0#0"1(6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#39#2#39#2#144"Object allocated on line 31 and stored into 'directionOne' is no longer referenced after this point and has a retain count of +1 (object leaked)6@73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320932781#39#2#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m2474001040#2138"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/DirectionsViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m
+s320598762.551941
+e320598762.824363
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m
+lSLF07#2@80"Analyze /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m320598762#320598762#0(0"0(0#0#72"/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m2474001040#2136"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/FavoritesViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/GradientView.m
+s320598762.347532
+e320598762.551868
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/GradientView.m
+lSLF07#2@69"Analyze /Users/admin/Documents/PublicTransport/Classes/GradientView.m320598762#320598762#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/Classes/GradientView.m2474001040#2114"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/GradientView.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/GradientView.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m
+s320945013.278686
+e320945013.544800
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m:10:
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.h:11:
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol
+o static const int kBus = 0;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTram = 1;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTrolleybus = 2;
+o                  ^
+o3 errors generated.
+lSLF07#2@83"Analyze /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m320945013#320945013#0(870"In file included from /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m:10:In file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.h:11:In file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol static const int kBus = 0;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol static const int kTram = 1;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol static const int kTrolleybus = 2;                  ^3 errors generated.1(25@46"Analyzer skipped this file due to parse errors320945013#4294967295#0#3(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#19#0#19#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#20#0#20#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#21#0#21#0#0"0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#0#0#0#0#0"0(0#0#75"/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m2474001040#2142"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/PublicTransportAppDelegate.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/Route.m
+s320944997.268633
+e320944997.545330
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/Route.m
+lSLF07#2@62"Analyze /Users/admin/Documents/PublicTransport/Classes/Route.m320944997#320944997#0(0"0(0#0#54"/Users/admin/Documents/PublicTransport/Classes/Route.m2474001040#2100"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/Route.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Route.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m
+s320598763.159150
+e320598763.386119
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m
+lSLF07#2@82"Analyze /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m320598763#320598763#0(0"0(0#0#74"/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m2474001040#2140"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/RouteNavigationController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m
+s320945013.794980
+e320945014.120675
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m:9:
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol
+o static const int kBus = 0;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTram = 1;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTrolleybus = 2;
+o                  ^
+o3 errors generated.
+lSLF07#2@77"Analyze /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m320945013#320945014#0(759"In file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m:9:In file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol static const int kBus = 0;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol static const int kTram = 1;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol static const int kTrolleybus = 2;                  ^3 errors generated.1(25@46"Analyzer skipped this file due to parse errors320945014#4294967295#0#3(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#19#0#19#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#20#0#20#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#21#0#21#0#0"0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#0#0#0#0#0"0(0#0#69"/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m2474001040#2130"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/RoutesViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/Stop.m
+s320944997.943789
+e320944998.188928
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/Stop.m
+lSLF07#2@61"Analyze /Users/admin/Documents/PublicTransport/Classes/Stop.m320944997#320944998#0(0"0(0#0#53"/Users/admin/Documents/PublicTransport/Classes/Stop.m2474001040#2098"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/Stop.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/Stop.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m
+s320944998.189080
+e320944998.445062
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/StopSchedule.m
+lSLF07#2@69"Analyze /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m320944998#320944998#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/Classes/StopSchedule.m2474001040#2114"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopSchedule.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m
+s320944998.948824
+e320944999.227016
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m
+lSLF07#2@84"Analyze /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m320944998#320944999#0(0"0(0#0#76"/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m2474001040#2144"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopSchedulesViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m
+s320944998.712936
+e320944998.948606
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m
+o/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m:32:18: warning: Potential leak of an object allocated on line 32 and stored into 'stopOne'
+o         Stop* stopOne = [[Stop alloc]
+o                         ^
+o1 warning generated.
+lSLF07#2@76"Analyze /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320944998#320944998#0(247"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m:32:18: warning: Potential leak of an object allocated on line 32 and stored into 'stopOne'         Stop* stopOne = [[Stop alloc]                         ^1 warning generated.1(0@74"Potential leak of an object allocated on line 32 and stored into 'stopOne'320944998#4294967295#0#4(17@0"320944998#4294967295#0#0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#0#0#0#0#0"0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#0#0#0#0#1(3@6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#32#2#32#2#6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#32#18#37#8#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)320944998#4294967295#0#0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#32#18#0#0#0"1(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#32#18#37#8#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"320944998#4294967295#0#0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#0#0#0#0#0"0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#0#0#0#0#1(3@6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#32#18#37#8#6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#40#2#40#2#21@139"Object allocated on line 32 and stored into 'stopOne' is no longer referenced after this point and has a retain count of +1 (object leaked)320944998#4294967295#0#0(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#40#2#0#0#0"1(6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#40#2#40#2#139"Object allocated on line 32 and stored into 'stopOne' is no longer referenced after this point and has a retain count of +1 (object leaked)6@68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320942895#40#2#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m2474001040#2128"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/StopsViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/TransportType.m
+s320945014.120992
+e320945014.375259
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/TransportType.m
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/TransportType.m:9:
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol
+o static const int kBus = 0;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTram = 1;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTrolleybus = 2;
+o                  ^
+o3 errors generated.
+lSLF07#2@70"Analyze /Users/admin/Documents/PublicTransport/Classes/TransportType.m320945014#320945014#0(656"In file included from /Users/admin/Documents/PublicTransport/Classes/TransportType.m:9:/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol static const int kBus = 0;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol static const int kTram = 1;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol static const int kTrolleybus = 2;                  ^3 errors generated.1(25@46"Analyzer skipped this file due to parse errors320945014#4294967295#0#3(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#19#0#19#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#20#0#20#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945014#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#21#0#21#0#0"0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#0#0#0#0#0"0(0#0#62"/Users/admin/Documents/PublicTransport/Classes/TransportType.m2474001040#2116"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/TransportType.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/TransportType.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m
+s320945013.544953
+e320945013.794467
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m:9:
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.h:11:
+oIn file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol
+o static const int kBus = 0;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTram = 1;
+o                  ^
+o/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol
+o static const int kTrolleybus = 2;
+o                  ^
+o3 errors generated.
+lSLF07#2@85"Analyze /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m320945013#320945013#0(871"In file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m:9:In file included from /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.h:11:In file included from /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.h:11:/Users/admin/Documents/PublicTransport/Classes/TransportType.h:19:18: error: cannot declare variable inside @interface or @protocol static const int kBus = 0;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:20:18: error: cannot declare variable inside @interface or @protocol static const int kTram = 1;                  ^/Users/admin/Documents/PublicTransport/Classes/TransportType.h:21:18: error: cannot declare variable inside @interface or @protocol static const int kTrolleybus = 2;                  ^3 errors generated.1(25@46"Analyzer skipped this file due to parse errors320945013#4294967295#0#3(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#19#0#19#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#20#0#20#0#0"0(25@54"cannot declare variable inside @interface or @protocol320945013#4294967295#0#0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#21#0#21#0#0"0(6@62"/Users/admin/Documents/PublicTransport/Classes/TransportType.h320944647#0#0#0#0#0"0(0#0#77"/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m2474001040#2146"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/TransportTypesViewController.plist"0#
+
+CAnalyze /Users/admin/Documents/PublicTransport/main.m
+s320598761.096524
+e320598761.706967
+r1
+xAnalyze
+x/Users/admin/Documents/PublicTransport/main.m
+lSLF07#2@53"Analyze /Users/admin/Documents/PublicTransport/main.m320598761#320598761#0(0"0(0#0#45"/Users/admin/Documents/PublicTransport/main.m2474001040#2090"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch --analyze /Users/admin/Documents/PublicTransport/main.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/StaticAnalyzer/normal/i386/main.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies320950926#320950926#0(0"0(0#1#0"2474001040#0"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Direction.o" /Users/admin/Documents/PublicTransport/Classes/Direction.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950955.707751
+e320950956.348447
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Direction.o
+x/Users/admin/Documents/PublicTransport/Classes/Direction.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/admin/Documents/PublicTransport/Classes/Direction.m320950955#320950956#0(0"0(0#0#58"/Users/admin/Documents/PublicTransport/Classes/Direction.m2474001040#2099"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/Direction.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Direction.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/DirectionsViewController.o" /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950957.304076
+e320950957.933180
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/DirectionsViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m320950957#320950957#0(0"0(0#0#73"/Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m2474001040#2129"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/DirectionsViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Favorites.o" /Users/admin/Documents/PublicTransport/Classes/Favorites.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320184249.423981
+e320184249.980753
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Favorites.o
+x/Users/admin/Documents/PublicTransport/Classes/Favorites.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/admin/Documents/PublicTransport/Classes/Favorites.m320184249#320184249#0(0"0(0#0#58"/Users/admin/Documents/PublicTransport/Classes/Favorites.m2474001040#2099"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/Favorites.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Favorites.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesController.o" /Users/admin/Documents/PublicTransport/Classes/FavoritesController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320185568.988607
+e320185569.811035
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesController.o
+x/Users/admin/Documents/PublicTransport/Classes/FavoritesController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/admin/Documents/PublicTransport/Classes/FavoritesController.m320185568#320185569#0(0"0(0#0#68"/Users/admin/Documents/PublicTransport/Classes/FavoritesController.m2474001040#2119"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/FavoritesController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesViewController.o" /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950953.118329
+e320950953.581406
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m320950953#320950953#0(0"0(0#0#72"/Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m2474001040#2127"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/FavoritesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/FavoritesViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/GradientView.o" /Users/admin/Documents/PublicTransport/Classes/GradientView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950952.565071
+e320950953.118148
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/GradientView.o
+x/Users/admin/Documents/PublicTransport/Classes/GradientView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/admin/Documents/PublicTransport/Classes/GradientView.m320950952#320950953#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/Classes/GradientView.m2474001040#2105"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/GradientView.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/GradientView.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportAppDelegate.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950951.503401
+e320950952.067547
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportAppDelegate.o
+x/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m320950951#320950952#0(0"0(0#0#75"/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m2474001040#2133"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportAppDelegate.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportViewController.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320185445.075472
+e320185445.546764
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m320185445#320185445#0(0"0(0#0#78"/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m2474001040#2139"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransportViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Route.o" /Users/admin/Documents/PublicTransport/Classes/Route.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950955.266113
+e320950955.707458
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Route.o
+x/Users/admin/Documents/PublicTransport/Classes/Route.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/admin/Documents/PublicTransport/Classes/Route.m320950955#320950955#0(0"0(0#0#54"/Users/admin/Documents/PublicTransport/Classes/Route.m2474001040#2091"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/Route.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Route.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RouteNavigationController.o" /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950954.113607
+e320950954.735526
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RouteNavigationController.o
+x/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m320950954#320950954#0(0"0(0#0#74"/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m2474001040#2131"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RouteNavigationController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesController.o" /Users/admin/Documents/PublicTransport/Classes/RoutesController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320185447.151333
+e320185447.732285
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesController.o
+x/Users/admin/Documents/PublicTransport/Classes/RoutesController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/admin/Documents/PublicTransport/Classes/RoutesController.m320185447#320185447#0(0"0(0#0#65"/Users/admin/Documents/PublicTransport/Classes/RoutesController.m2474001040#2113"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/RoutesController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesViewController.o" /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950953.581596
+e320950954.113286
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m320950953#320950954#0(0"0(0#0#69"/Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m2474001040#2121"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/RoutesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/RoutesViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Stop.o" /Users/admin/Documents/PublicTransport/Classes/Stop.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950956.348632
+e320950956.810813
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Stop.o
+x/Users/admin/Documents/PublicTransport/Classes/Stop.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/admin/Documents/PublicTransport/Classes/Stop.m320950956#320950956#0(0"0(0#0#53"/Users/admin/Documents/PublicTransport/Classes/Stop.m2474001040#2089"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/Stop.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/Stop.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedule.o" /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950956.810993
+e320950957.303184
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedule.o
+x/Users/admin/Documents/PublicTransport/Classes/StopSchedule.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m320950956#320950957#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/Classes/StopSchedule.m2474001040#2105"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/StopSchedule.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedule.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesController.o" /Users/admin/Documents/PublicTransport/Classes/StopSchedulesController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesViewController.o" /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950958.469286
+e320950958.934519
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m320950958#320950958#0(0"0(0#0#76"/Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m2474001040#2135"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopSchedulesViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopsViewController.o" /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950957.933358
+e320950958.469101
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopsViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m320950957#320950958#0(0"0(0#0#68"/Users/admin/Documents/PublicTransport/Classes/StopsViewController.m2474001040#2119"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/StopsViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/StopsViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportType.o" /Users/admin/Documents/PublicTransport/Classes/TransportType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950954.735704
+e320950955.265935
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportType.o
+x/Users/admin/Documents/PublicTransport/Classes/TransportType.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/admin/Documents/PublicTransport/Classes/TransportType.m320950954#320950955#0(0"0(0#0#62"/Users/admin/Documents/PublicTransport/Classes/TransportType.m2474001040#2107"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/TransportType.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportType.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportTypesViewController.o" /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950952.067746
+e320950952.564771
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportTypesViewController.o
+x/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m320950952#320950952#0(0"0(0#0#77"/Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m2474001040#2137"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/Classes/TransportTypesViewController.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/TransportTypesViewController.o"0#
+
+CCompileC "build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/main.o" /Users/admin/Documents/PublicTransport/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950950.967100
+e320950951.503347
+r1
+xCompileC
+xbuild/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/main.o
+x/Users/admin/Documents/PublicTransport/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/admin/Documents/PublicTransport/main.m320950950#320950951#0(0"0(0#0#45"/Users/admin/Documents/PublicTransport/main.m2474001040#2081"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -include /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch -c /Users/admin/Documents/PublicTransport/main.m -o "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib
+s320950935.520982
+e320950937.690376
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib
+lSLF07#2@37"CompileXIB Classes/DirectionsView.xib320950935#320950937#0(0"0(0#0#65"/Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib2474001040#594"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsView.nib /Users/admin/Documents/PublicTransport/Classes/DirectionsView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/DirectionsViewController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/Favorites.xib
+s320185084.206137
+e320185086.130272
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/Favorites.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/admin/Documents/PublicTransport/Classes/Favorites.xib:4: warning: The separator style "Single Line Etched" is not supported on plain style table views.
+lSLF07#2@32"CompileXIB Classes/Favorites.xib320185084#320185086#0(200"/* com.apple.ibtool.document.warnings *//Users/admin/Documents/PublicTransport/Classes/Favorites.xib:4: warning: The separator style "Single Line Etched" is not supported on plain style table views.1(22@85"The separator style "Single Line Etched" is not supported on plain style table views.320185086#4294967295#0#0(6@60"/Users/admin/Documents/PublicTransport/Classes/Favorites.xib320185078#4#0#4#0#0"0(0#0#60"/Users/admin/Documents/PublicTransport/Classes/Favorites.xib2474001040#584"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Favorites.nib /Users/admin/Documents/PublicTransport/Classes/Favorites.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib
+s320185438.016807
+e320185440.240639
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib:4: warning: The separator style "Single Line Etched" is not supported on plain style table views.
+lSLF07#2@42"CompileXIB Classes/FavoritesController.xib320185438#320185440#0(210"/* com.apple.ibtool.document.warnings *//Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib:4: warning: The separator style "Single Line Etched" is not supported on plain style table views.1(22@85"The separator style "Single Line Etched" is not supported on plain style table views.320185440#4294967295#0#0(6@70"/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib320185078#4#0#4#0#0"0(0#0#70"/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib2474001040#604"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/FavoritesController.nib /Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib
+s320950930.138133
+e320950932.071456
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib
+lSLF07#2@36"CompileXIB Classes/FavoritesView.xib320950930#320950932#0(0"0(0#0#64"/Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib2474001040#592"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/FavoritesView.nib /Users/admin/Documents/PublicTransport/Classes/FavoritesView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/RoutesController.xib
+s320185440.240852
+e320185442.410179
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/RoutesController.xib
+lSLF07#2@39"CompileXIB Classes/RoutesController.xib320185440#320185442#0(0"0(0#0#67"/Users/admin/Documents/PublicTransport/Classes/RoutesController.xib2474001040#598"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesController.nib /Users/admin/Documents/PublicTransport/Classes/RoutesController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/RoutesView.xib
+s320950932.071772
+e320950933.690331
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/RoutesView.xib
+lSLF07#2@33"CompileXIB Classes/RoutesView.xib320950932#320950933#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/Classes/RoutesView.xib2474001040#586"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesView.nib /Users/admin/Documents/PublicTransport/Classes/RoutesView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopSchedulesController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib
+s320950939.235555
+e320950940.667985
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib
+lSLF07#2@40"CompileXIB Classes/StopSchedulesView.xib320950939#320950940#0(0"0(0#0#68"/Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib2474001040#600"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesView.nib /Users/admin/Documents/PublicTransport/Classes/StopSchedulesView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopSchedulesViewController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopsView.xib
+s320950937.690664
+e320950939.235342
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/Classes/StopsView.xib
+lSLF07#2@32"CompileXIB Classes/StopsView.xib320950937#320950939#0(0"0(0#0#60"/Users/admin/Documents/PublicTransport/Classes/StopsView.xib2474001040#584"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopsView.nib /Users/admin/Documents/PublicTransport/Classes/StopsView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/StopsViewController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/DirectionsViewCell.xib
+s320950940.668144
+e320950942.255663
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/DirectionsViewCell.xib
+lSLF07#2@33"CompileXIB DirectionsViewCell.xib320950940#320950942#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/DirectionsViewCell.xib2474001040#594"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsViewCell.nib /Users/admin/Documents/PublicTransport/DirectionsViewCell.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib
+s320950946.971701
+e320950949.021669
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib
+lSLF07#2@35"CompileXIB DirectionsViewHeader.xib320950946#320950949#0(0"0(0#0#63"/Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib2474001040#598"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/DirectionsViewHeader.nib /Users/admin/Documents/PublicTransport/DirectionsViewHeader.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/MainWindow.xib
+s320950926.207797
+e320950928.287191
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib320950926#320950928#0(0"0(0#0#53"/Users/admin/Documents/PublicTransport/MainWindow.xib2474001040#578"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/MainWindow.nib /Users/admin/Documents/PublicTransport/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/PublicTransportViewController.xib
+s320187970.730577
+e320187973.202140
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/PublicTransportViewController.xib
+lSLF07#2@44"CompileXIB PublicTransportViewController.xib320187970#320187973#0(0"0(0#0#72"/Users/admin/Documents/PublicTransport/PublicTransportViewController.xib2474001040#616"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransportViewController.nib /Users/admin/Documents/PublicTransport/PublicTransportViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/RoutesViewCell.xib
+s320950933.733935
+e320950935.520524
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/RoutesViewCell.xib
+lSLF07#2@29"CompileXIB RoutesViewCell.xib320950933#320950935#0(0"0(0#0#57"/Users/admin/Documents/PublicTransport/RoutesViewCell.xib2474001040#586"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesViewCell.nib /Users/admin/Documents/PublicTransport/RoutesViewCell.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/RoutesViewHeader.xib
+s320950945.303759
+e320950946.971429
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/RoutesViewHeader.xib
+lSLF07#2@31"CompileXIB RoutesViewHeader.xib320950945#320950946#0(0"0(0#0#59"/Users/admin/Documents/PublicTransport/RoutesViewHeader.xib2474001040#590"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/RoutesViewHeader.nib /Users/admin/Documents/PublicTransport/RoutesViewHeader.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib
+s320950943.851190
+e320950945.303593
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib
+lSLF07#2@36"CompileXIB StopSchedulesViewCell.xib320950943#320950945#0(0"0(0#0#64"/Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib2474001040#600"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopSchedulesViewCell.nib /Users/admin/Documents/PublicTransport/StopSchedulesViewCell.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/StopsViewCell.xib
+s320950942.269440
+e320950943.850920
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/StopsViewCell.xib
+lSLF07#2@28"CompileXIB StopsViewCell.xib320950942#320950943#0(0"0(0#0#56"/Users/admin/Documents/PublicTransport/StopsViewCell.xib2474001040#584"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/StopsViewCell.nib /Users/admin/Documents/PublicTransport/StopsViewCell.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/admin/Documents/PublicTransport/TransportTypesView.xib
+s320950928.287449
+e320950930.111343
+r1
+xCompileXIB
+x/Users/admin/Documents/PublicTransport/TransportTypesView.xib
+lSLF07#2@33"CompileXIB TransportTypesView.xib320950928#320950930#0(0"0(0#0#61"/Users/admin/Documents/PublicTransport/TransportTypesView.xib2474001040#594"    cd /Users/admin/Documents/PublicTransport    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/TransportTypesView.nib /Users/admin/Documents/PublicTransport/TransportTypesView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/home_30.png home_30.png
+r0
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/home_60.png home_60.png
+r0
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_bus.png ../../.Trash/ic_bus.png
+s320950930.111609
+e320950930.276803
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_bus.png
+x../../.Trash/ic_bus.png
+lSLF07#2@28"Copy ../../.Trash/ic_bus.png320950930#320950930#0(0"0(0#0#62"/Users/admin/Documents/PublicTransport/../../.Trash/ic_bus.png2474001040#489"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/../../.Trash/ic_bus.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_home.png ic_home.png
+s320950933.690579
+e320950933.844063
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_home.png
+xic_home.png
+lSLF07#2@16"Copy ic_home.png320950933#320950933#0(0"0(0#0#50"/Users/admin/Documents/PublicTransport/ic_home.png2474001040#477"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_home.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_home@2x.png ic_home@2x.png
+s320950933.694838
+e320950933.881578
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_home@2x.png
+xic_home@2x.png
+lSLF07#2@19"Copy ic_home@2x.png320950933#320950933#0(0"0(0#0#53"/Users/admin/Documents/PublicTransport/ic_home@2x.png2474001040#480"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_home@2x.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_map ic_map
+r0
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_map.png ic_map.png
+s320950942.255926
+e320950942.335919
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_map.png
+xic_map.png
+lSLF07#2@15"Copy ic_map.png320950942#320950942#0(0"0(0#0#49"/Users/admin/Documents/PublicTransport/ic_map.png2474001040#476"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_map.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_map@2x.png ic_map@2x.png
+s320950942.258711
+e320950942.339519
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_map@2x.png
+xic_map@2x.png
+lSLF07#2@18"Copy ic_map@2x.png320950942#320950942#0(0"0(0#0#52"/Users/admin/Documents/PublicTransport/ic_map@2x.png2474001040#479"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_map@2x.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_tram.png ic_tram.png
+s320950930.128108
+e320950930.233411
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_tram.png
+xic_tram.png
+lSLF07#2@16"Copy ic_tram.png320950930#320950930#0(0"0(0#0#50"/Users/admin/Documents/PublicTransport/ic_tram.png2474001040#477"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_tram.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/ic_trolleybus.png ic_trolleybus.png
+s320950930.115928
+e320950930.272954
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/ic_trolleybus.png
+xic_trolleybus.png
+lSLF07#2@22"Copy ic_trolleybus.png320950930#320950930#0(0"0(0#0#56"/Users/admin/Documents/PublicTransport/ic_trolleybus.png2474001040#483"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/ic_trolleybus.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/icon.png ../../Dropbox/Development/iPhone/Satiksme/icon.png
+s320598749.795045
+e320598749.896293
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/icon.png
+x../../Dropbox/Development/iPhone/Satiksme/icon.png
+lSLF07#2@55"Copy ../../Dropbox/Development/iPhone/Satiksme/icon.png320598749#320598749#0(0"0(0#0#89"/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon.png2474001040#516"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/icon.png icon.png
+s320950933.707181
+e320950933.870576
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png320950933#320950933#0(0"0(0#0#47"/Users/admin/Documents/PublicTransport/icon.png2474001040#474"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/icon.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/icon@2x.png ../../Dropbox/Development/iPhone/Satiksme/icon@2x.png
+s320598749.797675
+e320598749.974069
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/icon@2x.png
+x../../Dropbox/Development/iPhone/Satiksme/icon@2x.png
+lSLF07#2@58"Copy ../../Dropbox/Development/iPhone/Satiksme/icon@2x.png320598749#320598750#0(0"0(0#0#92"/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon@2x.png2474001040#519"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon@2x.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/icon@2x.png icon@2x.png
+s320950933.721728
+e320950933.866678
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PublicTransport.app/icon@2x.png
+xicon@2x.png
+lSLF07#2@16"Copy icon@2x.png320950933#320950933#0(0"0(0#0#50"/Users/admin/Documents/PublicTransport/icon@2x.png2474001040#477"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/admin/Documents/PublicTransport/icon@2x.png /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/map.png map.png
+r0
+
+CCpResource build/Debug-iphonesimulator/PublicTransport.app/map@2x.png map@2x.png
+r0
+
+CGenerateDSYMFile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app.dSYM /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport
+s320950959.123552
+e320950959.317834
+r1
+xGenerateDSYMFile
+x/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app.dSYM
+x/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport
+lSLF07#2@133"GenerateDSYMFile build/Debug-iphonesimulator/PublicTransport.app.dSYM build/Debug-iphonesimulator/PublicTransport.app/PublicTransport320950959#320950959#0(0"0(0#0#102"/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport2474001040#407"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport -o /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app.dSYM0#
+
+CLd /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport normal i386
+s320950958.934798
+e320950959.123368
+r1
+xLd
+x/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport
+xnormal
+xi386
+lSLF07#2@107"Link /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport320950958#320950959#0(0"0(0#0#0"2474001040#941"    cd /Users/admin/Documents/PublicTransport    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -filelist "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/Objects-normal/i386/PublicTransport.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PublicTransport0#
+
+CProcessInfoPlistFile /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Info.plist PublicTransport-Info.plist
+s320950926.163970
+e320950926.207641
+r1
+xProcessInfoPlistFile
+x/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Info.plist
+xPublicTransport-Info.plist
+lSLF07#2@34"Process PublicTransport-Info.plist320950926#320950926#0(0"0(0#0#65"/Users/admin/Documents/PublicTransport/PublicTransport-Info.plist2474001040#503"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility PublicTransport-Info.plist -genpkginfo /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app/Info.plist0#
+
+CProcessPCH /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch.pth PublicTransport_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s320449856.649967
+e320449858.034280
+r1
+xProcessPCH
+x/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch.pth
+xPublicTransport_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@37"Precompile PublicTransport_Prefix.pch320449856#320449858#0(0"0(0#0#65"/Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch2474001040#1955"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -c /Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch -o /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fkkinsjstoiyuhefhlcdnzmvabxs/PublicTransport_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch.gch PublicTransport_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320950949.021964
+e320950950.966600
+r1
+xProcessPCH
+x/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch.gch
+xPublicTransport_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@37"Precompile PublicTransport_Prefix.pch320950949#320950950#0(0"0(0#0#65"/Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch2474001040#1964"    cd /Users/admin/Documents/PublicTransport    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-generated-files.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-own-target-headers.hmap" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-all-target-headers.hmap" -iquote "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/PublicTransport-project-headers.hmap" -F/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator -I/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/include "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources/i386" "-I/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphonesimulator/Rigas Satiksme.build/DerivedSources" -c /Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch -o /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-fyawewhvfywjqbblemfxzveshgfr/PublicTransport_Prefix.pch.gch0#
+
+CTouch /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app
+s320950959.317980
+e320950959.339640
+r1
+xTouch
+x/Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app
+lSLF07#2@92"Touch /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app320950959#320950959#0(0"0(0#0#0"2474001040#286"    cd /Users/admin/Documents/PublicTransport    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/admin/Documents/PublicTransport/build/Debug-iphonesimulator/PublicTransport.app0#
+
