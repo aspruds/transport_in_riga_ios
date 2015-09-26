@@ -1,2 +1,0 @@
-/Users/admin/Documents/PublicTransportPremium/Classes/StopSchedulesViewController.m: In function '-[StopSchedulesViewController getDayOfWeek]':
-/Users/admin/Documents/PublicTransportPremium/Classes/StopSchedulesViewController.m:188: warning: invalid receiver type 'NSInteger'
