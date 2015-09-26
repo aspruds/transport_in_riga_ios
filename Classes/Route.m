@@ -12,28 +12,45 @@
 @implementation Route
 
 @synthesize routeId;
-@synthesize number;
-@synthesize title;
-@synthesize lowfloor;
+@synthesize authority;
+@synthesize city;
 @synthesize transportType;
+@synthesize operator;
+@synthesize specialDates;
+@synthesize weekdays;
+@synthesize validityPeriods;
+@synthesize number;
+@synthesize name;
+@synthesize directionType;
+@synthesize routeTag;
+@synthesize stops;
+@synthesize times;
+@synthesize commercial;
+@synthesize order;
 
-- (id)initWithTitle:(NSNumber*)rid number:(NSString*)n title:(NSString*)ttl 
-		   lowfloor:(NSNumber*)lf transportType:(TransportType*)typ {
-	
-	self.routeId = rid;
-	self.number = n;
-	self.title = ttl;
-	self.lowfloor = lf;
-	self.transportType = typ;
-	return self;
+-(NSString*) description {
+	return [NSString stringWithFormat:@"Route (routeId=%@, number=%@, city=%@, transportType=%@)", 
+			routeId, number, city, transportType ];
 }
 
-- (void)dealloc {
+- (void)dealloc {	
 	[routeId release];
-	[number release];
-	[title release];
-	[lowfloor release];
+	[authority release];
+	[city release];
 	[transportType release];
+	[operator release];
+	[specialDates release];
+	[weekdays release];
+	[validityPeriods release];
+	[number release];
+	[name release];
+	[directionType release];
+	[routeTag release];
+	[stops release];
+	[times release];
+	[commercial release];
+	[order release];
+	
 	[super dealloc];
 }
 @end

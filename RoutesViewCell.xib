@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1056</int>
-		<string key="IBDocument.SystemVersion">10J869</string>
+		<string key="IBDocument.SystemVersion">10K549</string>
 		<string key="IBDocument.InterfaceBuilderVersion">823</string>
-		<string key="IBDocument.AppKitVersion">1038.35</string>
+		<string key="IBDocument.AppKitVersion">1038.36</string>
 		<string key="IBDocument.HIToolboxVersion">461.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -50,7 +50,7 @@
 							<object class="IBUILabel" id="122415277">
 								<reference key="NSNextResponder" ref="591169796"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{12, 7}, {23, 29}}</string>
+								<string key="NSFrame">{{9, 9}, {26, 29}}</string>
 								<reference key="NSSuperview" ref="591169796"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -78,7 +78,7 @@
 							<object class="IBUILabel" id="916768142">
 								<reference key="NSNextResponder" ref="591169796"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{43, 11}, {241, 21}}</string>
+								<string key="NSFrame">{{41, 7}, {241, 32}}</string>
 								<reference key="NSSuperview" ref="591169796"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -87,6 +87,11 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">Label</string>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">16</double>
+									<int key="NSfFlags">16</int>
+								</object>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -94,9 +99,11 @@
 								<reference key="IBUIHighlightedColor" ref="755540710"/>
 								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">10</float>
+								<int key="IBUINumberOfLines">0</int>
+								<int key="IBUILineBreakMode">5</int>
 							</object>
 						</object>
-						<string key="NSFrameSize">{320, 44}</string>
+						<string key="NSFrameSize">{400, 50}</string>
 						<reference key="NSSuperview" ref="483834876"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -109,7 +116,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
-				<string key="NSFrameSize">{320, 44}</string>
+				<string key="NSFrameSize">{400, 50}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
@@ -118,6 +125,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUISeparatorStyle">1</int>
 				<reference key="IBUIContentView" ref="591169796"/>
+				<int key="IBUILineBreakMode">0</int>
 				<string key="IBUIReuseIdentifier">RoutesCellIdentifier</string>
 			</object>
 		</object>
@@ -192,15 +200,15 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>RoutesViewController</string>
 					<string>UIResponder</string>
-					<string>{{0, 690}, {320, 44}}</string>
+					<string>{{0, 684}, {400, 50}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBUAAAwgwAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABBQAAAwggAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCTAAAwfAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCEAAAwhgAAA</bytes>
 					</object>
 				</object>
 			</object>

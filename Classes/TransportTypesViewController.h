@@ -10,11 +10,19 @@
 #import "RouteNavigationController.h"
 #import "RoutesViewController.h"
 
-@interface TransportTypesViewController : UIViewController {
+@interface TransportTypesViewController : UITableViewController {
+	UITableViewCell* tableCell;
+	UIView* tableHeader;
 }
 
 @property (nonatomic, retain) RoutesViewController *routesView;
+@property (nonatomic, retain) IBOutlet UITableViewCell* tableCell;
+@property (nonatomic, retain) IBOutlet UIView* tableHeader;
+@property (nonatomic, retain) NSArray* transportTypes;
+@property (nonatomic, retain) MBProgressHUD* hud;
 
-- (IBAction)buttonPressed:(id)sender;
+-(void) loadTransportTypes;
+-(void) updateTable;
+-(void) updateHeader;
 @end
 

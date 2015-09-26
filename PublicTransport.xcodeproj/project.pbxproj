@@ -15,22 +15,56 @@
 		2899E5220DE3E06400AC0155 /* TransportTypesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TransportTypesView.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* TransportTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TransportTypesViewController.m */; };
-		8457995F131BF75F00EDC6F0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8457995D131BF75F00EDC6F0 /* icon.png */; };
-		84579960131BF75F00EDC6F0 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8457995E131BF75F00EDC6F0 /* icon@2x.png */; };
-		8477F2741322A9F100ED4A81 /* ic_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8477F2731322A9F100ED4A81 /* ic_bus.png */; };
+		8474B5FB13E20AE900FA2249 /* FavouriteStopsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8474B5FA13E20AE900FA2249 /* FavouriteStopsViewCell.xib */; };
 		8477F27B1322E27700ED4A81 /* StopsViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */; };
 		8477F2EA1322FA2700ED4A81 /* StopSchedulesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */; };
 		8477F31713238C5600ED4A81 /* StopScheduleHeaderGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F31613238C5600ED4A81 /* StopScheduleHeaderGradientView.m */; };
+		847AB0CF1593B9680086C886 /* riga.zip in Resources */ = {isa = PBXBuildFile; fileRef = 847AB0CE1593B9680086C886 /* riga.zip */; };
+		847AB0D61593C06E0086C886 /* StopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AB0D51593C06E0086C886 /* StopHeader.m */; };
+		847AB0DA1593C0AA0086C886 /* RouteHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AB0D91593C0AA0086C886 /* RouteHeader.m */; };
+		847E1C2015991498004254B3 /* HeaderParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E1C1F15991498004254B3 /* HeaderParser.m */; };
+		84806BFF14F0590200C51640 /* TransportTypesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84806BFE14F0590200C51640 /* TransportTypesViewHeader.xib */; };
+		848321C514BA50480037BC96 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 848321C414BA50480037BC96 /* UIColorExtensions.m */; };
 		848414F913210DB200E64339 /* StopsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848414F813210DB200E64339 /* StopsViewCell.xib */; };
 		848414FB13210DBD00E64339 /* StopSchedulesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */; };
 		8484156C1321335600E64339 /* RoutesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8484156B1321335600E64339 /* RoutesViewHeader.xib */; };
 		848415EF13214D8600E64339 /* DirectionsViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848415EE13214D8600E64339 /* DirectionsViewHeader.xib */; };
+		8484EFC314AF39A700FD985B /* TransportTypesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8484EFC214AF39A700FD985B /* TransportTypesViewCell.xib */; };
+		84850F6A1497CF5900B43D2B /* RouteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84850F691497CF5900B43D2B /* RouteParser.m */; };
+		8486585C14A7CDE800D292EF /* NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486585B14A7CDE800D292EF /* NSStringExtensions.m */; };
+		84867A1F1495347700991AFD /* ScheduleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84867A1E1495347700991AFD /* ScheduleData.m */; };
+		84867A2F14953C3500991AFD /* StopParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84867A2E14953C3500991AFD /* StopParser.m */; };
+		84867A341495462A00991AFD /* RouteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84867A331495462A00991AFD /* RouteService.m */; };
+		8486964614F03956009AF7BB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486964514F03956009AF7BB /* MBProgressHUD.m */; };
+		8486DBCC14A78D2A002EF861 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBA214A78D29002EF861 /* ioapi.c */; };
+		8486DBCD14A78D2A002EF861 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBA414A78D29002EF861 /* mztools.c */; };
+		8486DBCE14A78D2A002EF861 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBA614A78D29002EF861 /* unzip.c */; };
+		8486DBCF14A78D2A002EF861 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBA814A78D29002EF861 /* zip.c */; };
+		8486DBD014A78D2A002EF861 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBAC14A78D29002EF861 /* FileInZipInfo.m */; };
+		8486DBD114A78D2A002EF861 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBAE14A78D29002EF861 /* ZipException.m */; };
+		8486DBD214A78D2A002EF861 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB014A78D29002EF861 /* ZipFile.m */; };
+		8486DBD314A78D2A002EF861 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB214A78D29002EF861 /* ZipReadStream.m */; };
+		8486DBD414A78D2A002EF861 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB414A78D29002EF861 /* ZipWriteStream.m */; };
+		8486DBD514A78D2A002EF861 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB614A78D29002EF861 /* adler32.c */; };
+		8486DBD614A78D2A002EF861 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB714A78D29002EF861 /* compress.c */; };
+		8486DBD714A78D2A002EF861 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBB814A78D29002EF861 /* crc32.c */; };
+		8486DBD814A78D2A002EF861 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBBA14A78D29002EF861 /* deflate.c */; };
+		8486DBD914A78D2A002EF861 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBBC14A78D29002EF861 /* gzio.c */; };
+		8486DBDA14A78D2A002EF861 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBBD14A78D29002EF861 /* infback.c */; };
+		8486DBDB14A78D2A002EF861 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBBE14A78D29002EF861 /* inffast.c */; };
+		8486DBDC14A78D2A002EF861 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBC114A78D29002EF861 /* inflate.c */; };
+		8486DBDD14A78D2A002EF861 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBC314A78D2A002EF861 /* inftrees.c */; };
+		8486DBDE14A78D2A002EF861 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBC514A78D2A002EF861 /* trees.c */; };
+		8486DBDF14A78D2A002EF861 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBC714A78D2A002EF861 /* uncompr.c */; };
+		8486DBE014A78D2A002EF861 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486DBCA14A78D2A002EF861 /* zutil.c */; };
 		8488D6881336A35D00D29132 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488D6871336A35D00D29132 /* libsqlite3.0.dylib */; };
 		8488D68E1336AB2C00D29132 /* schedule.db in Resources */ = {isa = PBXBuildFile; fileRef = 8488D68D1336AB2C00D29132 /* schedule.db */; };
 		8488D6A31336B3D400D29132 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D69E1336B3D400D29132 /* FMDatabase.m */; };
 		8488D6A41336B3D400D29132 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6A01336B3D400D29132 /* FMDatabaseAdditions.m */; };
 		8488D6A51336B3D400D29132 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6A21336B3D400D29132 /* FMResultSet.m */; };
 		8488D6AD1336B7A100D29132 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488D6AC1336B7A100D29132 /* DatabaseManager.m */; };
+		8489F12814AF8D1800BA5C2D /* StopPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489F12714AF8D1800BA5C2D /* StopPinAnnotation.m */; };
+		848A6F411492C8660071998E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A6F401492C8660071998E /* City.m */; };
 		848BF1C0135CDA3B00896867 /* FavouriteRoutesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848BF1BE135CDA3B00896867 /* FavouriteRoutesController.m */; };
 		848BF1C1135CDA3B00896867 /* FavouriteRoutesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848BF1BF135CDA3B00896867 /* FavouriteRoutesView.xib */; };
 		848BF1C5135CDA4800896867 /* FavouriteStopsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848BF1C3135CDA4800896867 /* FavouriteStopsController.m */; };
@@ -39,22 +73,28 @@
 		848DFE45134DABD20024B7BA /* StopMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DFE43134DABD20024B7BA /* StopMapView.xib */; };
 		848E478B1315A3E500702554 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E47891315A3E500702554 /* RoutesViewController.m */; };
 		848E478C1315A3E500702554 /* RoutesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E478A1315A3E500702554 /* RoutesView.xib */; };
-		848E47C31315B19B00702554 /* RouteNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E47C21315B19B00702554 /* RouteNavigationController.m */; };
+		848F75F914A88E9000FEBA3C /* PreferencesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F75F814A88E9000FEBA3C /* PreferencesService.m */; };
+		848F846F13E74F3800188683 /* ic_bus_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848F846E13E74F3800188683 /* ic_bus_favicon.png */; };
+		848F847313E74F4400188683 /* ic_minibus_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848F847013E74F4400188683 /* ic_minibus_favicon.png */; };
+		848F847413E74F4400188683 /* ic_tram_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848F847113E74F4400188683 /* ic_tram_favicon.png */; };
+		848F847513E74F4400188683 /* ic_trolleybus_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848F847213E74F4400188683 /* ic_trolleybus_favicon.png */; };
 		848FA3C81315120600F58900 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FA3C71315120600F58900 /* GradientView.m */; };
-		848FA3EE13151A9B00F58900 /* ic_trolleybus.png in Resources */ = {isa = PBXBuildFile; fileRef = 848FA3ED13151A9B00F58900 /* ic_trolleybus.png */; };
-		848FA3F013151AAB00F58900 /* ic_tram.png in Resources */ = {isa = PBXBuildFile; fileRef = 848FA3EF13151AAB00F58900 /* ic_tram.png */; };
 		848FA459131560A900F58900 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FA457131560A900F58900 /* FavoritesViewController.m */; };
 		848FA45A131560A900F58900 /* FavoritesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FA458131560A900F58900 /* FavoritesView.xib */; };
 		8490D5DB131BD4100036E4AE /* ic_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8490D5D9131BD4100036E4AE /* ic_home.png */; };
 		8490D5DC131BD4100036E4AE /* ic_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8490D5DA131BD4100036E4AE /* ic_home@2x.png */; };
 		8490D5ED131BD84B0036E4AE /* TransportType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D5EC131BD84B0036E4AE /* TransportType.m */; };
 		8490D635131BDD850036E4AE /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D634131BDD850036E4AE /* Route.m */; };
-		8490D638131BDFBC0036E4AE /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D637131BDFBC0036E4AE /* Direction.m */; };
 		8490D63B131BE03E0036E4AE /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D63A131BE03E0036E4AE /* Stop.m */; };
 		8490D63E131BE0F10036E4AE /* StopSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490D63D131BE0F10036E4AE /* StopSchedule.m */; };
+		8493AEE614B9B45E00EA2F3D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8493AEE414B9B45E00EA2F3D /* Default@2x.png */; };
 		8494FDBC134A5BB800E90166 /* RouteMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494FDBA134A5BB800E90166 /* RouteMapController.m */; };
 		8494FDBD134A5BB800E90166 /* RouteMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494FDBB134A5BB800E90166 /* RouteMapView.xib */; };
 		8494FDCA134A5C9300E90166 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8494FDC9134A5C9300E90166 /* MapKit.framework */; };
+		849AFB4A13DF751F007E23C0 /* FavouriteRoutesViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849AFB4913DF751F007E23C0 /* FavouriteRoutesViewHeader.xib */; };
+		849AFB4D13DF75D1007E23C0 /* FavouriteStopsViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849AFB4C13DF75D1007E23C0 /* FavouriteStopsViewHeader.xib */; };
+		849D9172149435A300BD2FA1 /* RawSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D9171149435A300BD2FA1 /* RawSchedule.m */; };
+		84A8CBAC13E0BCCD0000758F /* FavouriteRoutesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A8CBAB13E0BCCD0000758F /* FavouriteRoutesViewCell.xib */; };
 		84C97AF1131D24F1003A1990 /* RoutesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */; };
 		84EEB16313203E44003A961D /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB16113203E44003A961D /* DirectionsViewController.m */; };
 		84EEB16413203E44003A961D /* DirectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB16213203E44003A961D /* DirectionsView.xib */; };
@@ -65,13 +105,16 @@
 		84EEB1AA132049D1003A961D /* DirectionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */; };
 		84EEB1B613205046003A961D /* ic_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1B413205046003A961D /* ic_map.png */; };
 		84EEB1B713205046003A961D /* ic_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EEB1B513205046003A961D /* ic_map@2x.png */; };
+		84FD9BD614B9B57C00E43976 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FD9BD514B9B57C00E43976 /* Default.png */; };
+		84FD9BEE14B9C04A00E43976 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84FD9BED14B9C04A00E43976 /* Settings.bundle */; };
+		84FD9C3B14B9E76400E43976 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FD9C3A14B9E76400E43976 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PublicTransportAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTransportAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PublicTransportAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTransportAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* PublicTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Transport in Riga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transport in Riga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* TransportTypesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTypesView.xib; sourceTree = "<group>"; };
@@ -80,17 +123,79 @@
 		28D7ACF70DDB3853001CB0EB /* TransportTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportTypesViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PublicTransport_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTransport_Prefix.pch; sourceTree = "<group>"; };
-		8457995D131BF75F00EDC6F0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		8457995E131BF75F00EDC6F0 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		8477F2731322A9F100ED4A81 /* ic_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bus.png; sourceTree = "<group>"; };
+		8474B5FA13E20AE900FA2249 /* FavouriteStopsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteStopsViewCell.xib; sourceTree = "<group>"; };
 		8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsViewHeader.xib; sourceTree = "<group>"; };
 		8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopSchedulesViewHeader.xib; sourceTree = "<group>"; };
 		8477F31513238C5600ED4A81 /* StopScheduleHeaderGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopScheduleHeaderGradientView.h; sourceTree = "<group>"; };
 		8477F31613238C5600ED4A81 /* StopScheduleHeaderGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopScheduleHeaderGradientView.m; sourceTree = "<group>"; };
+		847AB0CE1593B9680086C886 /* riga.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = riga.zip; sourceTree = "<group>"; };
+		847AB0D41593C06E0086C886 /* StopHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopHeader.h; sourceTree = "<group>"; };
+		847AB0D51593C06E0086C886 /* StopHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopHeader.m; sourceTree = "<group>"; };
+		847AB0D81593C0AA0086C886 /* RouteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteHeader.h; sourceTree = "<group>"; };
+		847AB0D91593C0AA0086C886 /* RouteHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteHeader.m; sourceTree = "<group>"; };
+		847E1C1E15991498004254B3 /* HeaderParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderParser.h; sourceTree = "<group>"; };
+		847E1C1F15991498004254B3 /* HeaderParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderParser.m; sourceTree = "<group>"; };
+		84806BFE14F0590200C51640 /* TransportTypesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTypesViewHeader.xib; sourceTree = "<group>"; };
+		848321C314BA50480037BC96 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
+		848321C414BA50480037BC96 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		848414F813210DB200E64339 /* StopsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsViewCell.xib; sourceTree = "<group>"; };
 		848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopSchedulesViewCell.xib; sourceTree = "<group>"; };
 		8484156B1321335600E64339 /* RoutesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesViewHeader.xib; sourceTree = "<group>"; };
 		848415EE13214D8600E64339 /* DirectionsViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewHeader.xib; sourceTree = "<group>"; };
+		8484EFC214AF39A700FD985B /* TransportTypesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTypesViewCell.xib; sourceTree = "<group>"; };
+		84850F681497CF5900B43D2B /* RouteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteParser.h; sourceTree = "<group>"; };
+		84850F691497CF5900B43D2B /* RouteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteParser.m; sourceTree = "<group>"; };
+		8486585A14A7CDE800D292EF /* NSStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtensions.h; sourceTree = "<group>"; };
+		8486585B14A7CDE800D292EF /* NSStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensions.m; sourceTree = "<group>"; };
+		84867A1D1495347700991AFD /* ScheduleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleData.h; sourceTree = "<group>"; };
+		84867A1E1495347700991AFD /* ScheduleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleData.m; sourceTree = "<group>"; };
+		84867A2D14953C3500991AFD /* StopParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopParser.h; sourceTree = "<group>"; };
+		84867A2E14953C3500991AFD /* StopParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopParser.m; sourceTree = "<group>"; };
+		84867A321495462A00991AFD /* RouteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteService.h; sourceTree = "<group>"; };
+		84867A331495462A00991AFD /* RouteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteService.m; sourceTree = "<group>"; };
+		8486964414F03956009AF7BB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8486964514F03956009AF7BB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8486DBA114A78D29002EF861 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		8486DBA214A78D29002EF861 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		8486DBA314A78D29002EF861 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		8486DBA414A78D29002EF861 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		8486DBA514A78D29002EF861 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		8486DBA614A78D29002EF861 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		8486DBA714A78D29002EF861 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		8486DBA814A78D29002EF861 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		8486DBA914A78D29002EF861 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		8486DBAB14A78D29002EF861 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		8486DBAC14A78D29002EF861 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
+		8486DBAD14A78D29002EF861 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		8486DBAE14A78D29002EF861 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
+		8486DBAF14A78D29002EF861 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		8486DBB014A78D29002EF861 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
+		8486DBB114A78D29002EF861 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		8486DBB214A78D29002EF861 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
+		8486DBB314A78D29002EF861 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		8486DBB414A78D29002EF861 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
+		8486DBB614A78D29002EF861 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		8486DBB714A78D29002EF861 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		8486DBB814A78D29002EF861 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		8486DBB914A78D29002EF861 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		8486DBBA14A78D29002EF861 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		8486DBBB14A78D29002EF861 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		8486DBBC14A78D29002EF861 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
+		8486DBBD14A78D29002EF861 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		8486DBBE14A78D29002EF861 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		8486DBBF14A78D29002EF861 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		8486DBC014A78D29002EF861 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		8486DBC114A78D29002EF861 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		8486DBC214A78D2A002EF861 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		8486DBC314A78D2A002EF861 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		8486DBC414A78D2A002EF861 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		8486DBC514A78D2A002EF861 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		8486DBC614A78D2A002EF861 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		8486DBC714A78D2A002EF861 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		8486DBC814A78D2A002EF861 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		8486DBC914A78D2A002EF861 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		8486DBCA14A78D2A002EF861 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		8486DBCB14A78D2A002EF861 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		8488D6871336A35D00D29132 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		8488D68D1336AB2C00D29132 /* schedule.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = schedule.db; sourceTree = "<group>"; };
 		8488D69D1336B3D400D29132 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -101,6 +206,10 @@
 		8488D6A21336B3D400D29132 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		8488D6AB1336B7A100D29132 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		8488D6AC1336B7A100D29132 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		8489F12614AF8D1800BA5C2D /* StopPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopPinAnnotation.h; sourceTree = "<group>"; };
+		8489F12714AF8D1800BA5C2D /* StopPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopPinAnnotation.m; sourceTree = "<group>"; };
+		848A6F3F1492C8660071998E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		848A6F401492C8660071998E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		848BF1BD135CDA3B00896867 /* FavouriteRoutesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteRoutesController.h; sourceTree = "<group>"; };
 		848BF1BE135CDA3B00896867 /* FavouriteRoutesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteRoutesController.m; sourceTree = "<group>"; };
 		848BF1BF135CDA3B00896867 /* FavouriteRoutesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteRoutesView.xib; path = Classes/FavouriteRoutesView.xib; sourceTree = "<group>"; };
@@ -113,12 +222,14 @@
 		848E47881315A3E500702554 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
 		848E47891315A3E500702554 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
 		848E478A1315A3E500702554 /* RoutesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RoutesView.xib; path = Classes/RoutesView.xib; sourceTree = "<group>"; };
-		848E47C11315B19B00702554 /* RouteNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteNavigationController.h; sourceTree = "<group>"; };
-		848E47C21315B19B00702554 /* RouteNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteNavigationController.m; sourceTree = "<group>"; };
+		848F75F714A88E9000FEBA3C /* PreferencesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesService.h; sourceTree = "<group>"; };
+		848F75F814A88E9000FEBA3C /* PreferencesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesService.m; sourceTree = "<group>"; };
+		848F846E13E74F3800188683 /* ic_bus_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bus_favicon.png; sourceTree = "<group>"; };
+		848F847013E74F4400188683 /* ic_minibus_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_minibus_favicon.png; sourceTree = "<group>"; };
+		848F847113E74F4400188683 /* ic_tram_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_tram_favicon.png; sourceTree = "<group>"; };
+		848F847213E74F4400188683 /* ic_trolleybus_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_trolleybus_favicon.png; sourceTree = "<group>"; };
 		848FA3C61315120600F58900 /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
 		848FA3C71315120600F58900 /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
-		848FA3ED13151A9B00F58900 /* ic_trolleybus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_trolleybus.png; sourceTree = "<group>"; };
-		848FA3EF13151AAB00F58900 /* ic_tram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_tram.png; sourceTree = "<group>"; };
 		848FA456131560A900F58900 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		848FA457131560A900F58900 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		848FA458131560A900F58900 /* FavoritesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavoritesView.xib; path = Classes/FavoritesView.xib; sourceTree = "<group>"; };
@@ -128,16 +239,22 @@
 		8490D5EC131BD84B0036E4AE /* TransportType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportType.m; sourceTree = "<group>"; };
 		8490D633131BDD850036E4AE /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
 		8490D634131BDD850036E4AE /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
-		8490D636131BDFBC0036E4AE /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
-		8490D637131BDFBC0036E4AE /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Direction.m; sourceTree = "<group>"; };
 		8490D639131BE03E0036E4AE /* Stop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stop.h; sourceTree = "<group>"; };
 		8490D63A131BE03E0036E4AE /* Stop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stop.m; sourceTree = "<group>"; };
 		8490D63C131BE0F10036E4AE /* StopSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopSchedule.h; sourceTree = "<group>"; };
 		8490D63D131BE0F10036E4AE /* StopSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopSchedule.m; sourceTree = "<group>"; };
+		8493AEE414B9B45E00EA2F3D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8494FDB9134A5BB800E90166 /* RouteMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMapController.h; sourceTree = "<group>"; };
 		8494FDBA134A5BB800E90166 /* RouteMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMapController.m; sourceTree = "<group>"; };
 		8494FDBB134A5BB800E90166 /* RouteMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RouteMapView.xib; path = Classes/RouteMapView.xib; sourceTree = "<group>"; };
 		8494FDC9134A5C9300E90166 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		849AFB4913DF751F007E23C0 /* FavouriteRoutesViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteRoutesViewHeader.xib; sourceTree = "<group>"; };
+		849AFB4C13DF75D1007E23C0 /* FavouriteStopsViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteStopsViewHeader.xib; sourceTree = "<group>"; };
+		849D9155149426A900BD2FA1 /* DayTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTypes.h; sourceTree = "<group>"; };
+		849D9170149435A300BD2FA1 /* RawSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawSchedule.h; sourceTree = "<group>"; };
+		849D9171149435A300BD2FA1 /* RawSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawSchedule.m; sourceTree = "<group>"; };
+		84A8CBAB13E0BCCD0000758F /* FavouriteRoutesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteRoutesViewCell.xib; sourceTree = "<group>"; };
+		84A971C914A8C58F00AF9B40 /* Transport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transport-Info.plist"; sourceTree = "<group>"; };
 		84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesViewCell.xib; sourceTree = "<group>"; };
 		84EEB16013203E44003A961D /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
 		84EEB16113203E44003A961D /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
@@ -151,6 +268,9 @@
 		84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewCell.xib; sourceTree = "<group>"; };
 		84EEB1B413205046003A961D /* ic_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_map.png; sourceTree = "<group>"; };
 		84EEB1B513205046003A961D /* ic_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_map@2x.png"; sourceTree = "<group>"; };
+		84FD9BD514B9B57C00E43976 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		84FD9BED14B9C04A00E43976 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		84FD9C3A14B9E76400E43976 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PublicTransport-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PublicTransport-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,17 +293,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8494FDB8134A5BA100E90166 /* map */,
-				8485C8D21338DDFA00D898B3 /* favourites */,
-				8485C8D11338DDDD00D898B3 /* schedule */,
-				8488D6AA1336B78C00D29132 /* data */,
-				8488D6911336B39500D29132 /* fmdb */,
-				8477F31413238C0100ED4A81 /* gradients */,
+				84883FC114B8F988003609AC /* views */,
+				8486DB8114A78CF3002EF861 /* utils */,
+				849D915B149432FC00BD2FA1 /* service */,
 				8490D5EE131BD84F0036E4AE /* model */,
 				1D3623240D0F684500981E51 /* PublicTransportAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PublicTransportAppDelegate.m */,
-				848E47C11315B19B00702554 /* RouteNavigationController.h */,
-				848E47C21315B19B00702554 /* RouteNavigationController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,7 +306,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* PublicTransport.app */,
+				1D6058910D05DD3D006BFB54 /* Transport in Riga.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +319,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				84A971C914A8C58F00AF9B40 /* Transport-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -220,10 +336,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8487C89514A9153300BF14A8 /* routes */,
 				848E48011315C03D00702554 /* views */,
 				848E48001315C01300702554 /* images */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8488D68D1336AB2C00D29132 /* schedule.db */,
+				84FD9BED14B9C04A00E43976 /* Settings.bundle */,
 				8D1107310486CEB800E47090 /* PublicTransport-Info.plist */,
 			);
 			name = Resources;
@@ -292,6 +409,133 @@
 			name = favourites;
 			sourceTree = "<group>";
 		};
+		84867A2C14953B8100991AFD /* parsers */ = {
+			isa = PBXGroup;
+			children = (
+				84867A2D14953C3500991AFD /* StopParser.h */,
+				84867A2E14953C3500991AFD /* StopParser.m */,
+				84850F681497CF5900B43D2B /* RouteParser.h */,
+				84850F691497CF5900B43D2B /* RouteParser.m */,
+				847E1C1E15991498004254B3 /* HeaderParser.h */,
+				847E1C1F15991498004254B3 /* HeaderParser.m */,
+			);
+			name = parsers;
+			sourceTree = "<group>";
+		};
+		8486963814F037AA009AF7BB /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				8486964414F03956009AF7BB /* MBProgressHUD.h */,
+				8486964514F03956009AF7BB /* MBProgressHUD.m */,
+			);
+			name = progress;
+			sourceTree = "<group>";
+		};
+		8486DB8114A78CF3002EF861 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8486963814F037AA009AF7BB /* progress */,
+				8477F31413238C0100ED4A81 /* gradients */,
+				8488D6911336B39500D29132 /* fmdb */,
+				8486DB8214A78CFF002EF861 /* zip */,
+				8486585A14A7CDE800D292EF /* NSStringExtensions.h */,
+				8486585B14A7CDE800D292EF /* NSStringExtensions.m */,
+				848321C314BA50480037BC96 /* UIColorExtensions.h */,
+				848321C414BA50480037BC96 /* UIColorExtensions.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		8486DB8214A78CFF002EF861 /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				8486DBA014A78D29002EF861 /* MiniZip */,
+				8486DBAA14A78D29002EF861 /* Objective-Zip */,
+				8486DBB514A78D29002EF861 /* ZLib */,
+			);
+			name = zip;
+			sourceTree = "<group>";
+		};
+		8486DBA014A78D29002EF861 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				8486DBA114A78D29002EF861 /* crypt.h */,
+				8486DBA214A78D29002EF861 /* ioapi.c */,
+				8486DBA314A78D29002EF861 /* ioapi.h */,
+				8486DBA414A78D29002EF861 /* mztools.c */,
+				8486DBA514A78D29002EF861 /* mztools.h */,
+				8486DBA614A78D29002EF861 /* unzip.c */,
+				8486DBA714A78D29002EF861 /* unzip.h */,
+				8486DBA814A78D29002EF861 /* zip.c */,
+				8486DBA914A78D29002EF861 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		8486DBAA14A78D29002EF861 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				8486DBAB14A78D29002EF861 /* FileInZipInfo.h */,
+				8486DBAC14A78D29002EF861 /* FileInZipInfo.m */,
+				8486DBAD14A78D29002EF861 /* ZipException.h */,
+				8486DBAE14A78D29002EF861 /* ZipException.m */,
+				8486DBAF14A78D29002EF861 /* ZipFile.h */,
+				8486DBB014A78D29002EF861 /* ZipFile.m */,
+				8486DBB114A78D29002EF861 /* ZipReadStream.h */,
+				8486DBB214A78D29002EF861 /* ZipReadStream.m */,
+				8486DBB314A78D29002EF861 /* ZipWriteStream.h */,
+				8486DBB414A78D29002EF861 /* ZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		8486DBB514A78D29002EF861 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				8486DBB614A78D29002EF861 /* adler32.c */,
+				8486DBB714A78D29002EF861 /* compress.c */,
+				8486DBB814A78D29002EF861 /* crc32.c */,
+				8486DBB914A78D29002EF861 /* crc32.h */,
+				8486DBBA14A78D29002EF861 /* deflate.c */,
+				8486DBBB14A78D29002EF861 /* deflate.h */,
+				8486DBBC14A78D29002EF861 /* gzio.c */,
+				8486DBBD14A78D29002EF861 /* infback.c */,
+				8486DBBE14A78D29002EF861 /* inffast.c */,
+				8486DBBF14A78D29002EF861 /* inffast.h */,
+				8486DBC014A78D29002EF861 /* inffixed.h */,
+				8486DBC114A78D29002EF861 /* inflate.c */,
+				8486DBC214A78D2A002EF861 /* inflate.h */,
+				8486DBC314A78D2A002EF861 /* inftrees.c */,
+				8486DBC414A78D2A002EF861 /* inftrees.h */,
+				8486DBC514A78D2A002EF861 /* trees.c */,
+				8486DBC614A78D2A002EF861 /* trees.h */,
+				8486DBC714A78D2A002EF861 /* uncompr.c */,
+				8486DBC814A78D2A002EF861 /* zconf.h */,
+				8486DBC914A78D2A002EF861 /* zlib.h */,
+				8486DBCA14A78D2A002EF861 /* zutil.c */,
+				8486DBCB14A78D2A002EF861 /* zutil.h */,
+			);
+			path = ZLib;
+			sourceTree = "<group>";
+		};
+		8487C89514A9153300BF14A8 /* routes */ = {
+			isa = PBXGroup;
+			children = (
+				847AB0CE1593B9680086C886 /* riga.zip */,
+			);
+			name = routes;
+			sourceTree = "<group>";
+		};
+		84883FC114B8F988003609AC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8494FDB8134A5BA100E90166 /* map */,
+				8485C8D21338DDFA00D898B3 /* favourites */,
+				8485C8D11338DDDD00D898B3 /* schedule */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		8488D6911336B39500D29132 /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,27 +549,29 @@
 			name = fmdb;
 			sourceTree = "<group>";
 		};
-		8488D6AA1336B78C00D29132 /* data */ = {
+		8489F12214AF8CB900BA5C2D /* map */ = {
 			isa = PBXGroup;
 			children = (
-				8488D6AB1336B7A100D29132 /* DatabaseManager.h */,
-				8488D6AC1336B7A100D29132 /* DatabaseManager.m */,
+				8489F12614AF8D1800BA5C2D /* StopPinAnnotation.h */,
+				8489F12714AF8D1800BA5C2D /* StopPinAnnotation.m */,
 			);
-			name = data;
+			name = map;
 			sourceTree = "<group>";
 		};
 		848E48001315C01300702554 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				8477F2731322A9F100ED4A81 /* ic_bus.png */,
+				8493AEE414B9B45E00EA2F3D /* Default@2x.png */,
+				84FD9BD514B9B57C00E43976 /* Default.png */,
 				84EEB1B413205046003A961D /* ic_map.png */,
+				84FD9C3A14B9E76400E43976 /* icon.png */,
+				848F846E13E74F3800188683 /* ic_bus_favicon.png */,
 				84EEB1B513205046003A961D /* ic_map@2x.png */,
-				8457995D131BF75F00EDC6F0 /* icon.png */,
-				8457995E131BF75F00EDC6F0 /* icon@2x.png */,
+				848F847013E74F4400188683 /* ic_minibus_favicon.png */,
+				848F847113E74F4400188683 /* ic_tram_favicon.png */,
+				848F847213E74F4400188683 /* ic_trolleybus_favicon.png */,
 				8490D5D9131BD4100036E4AE /* ic_home.png */,
 				8490D5DA131BD4100036E4AE /* ic_home@2x.png */,
-				848FA3ED13151A9B00F58900 /* ic_trolleybus.png */,
-				848FA3EF13151AAB00F58900 /* ic_tram.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -337,6 +583,7 @@
 				8494FDBF134A5BDD00E90166 /* map */,
 				8494FDBE134A5BD700E90166 /* schedule */,
 				84C97AF2131D24F7003A1990 /* table */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -344,16 +591,19 @@
 		8490D5EE131BD84F0036E4AE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				8489F12214AF8CB900BA5C2D /* map */,
+				849D915C149433F700BD2FA1 /* raw */,
 				8490D5EB131BD84B0036E4AE /* TransportType.h */,
 				8490D5EC131BD84B0036E4AE /* TransportType.m */,
 				8490D633131BDD850036E4AE /* Route.h */,
 				8490D634131BDD850036E4AE /* Route.m */,
-				8490D636131BDFBC0036E4AE /* Direction.h */,
-				8490D637131BDFBC0036E4AE /* Direction.m */,
 				8490D639131BE03E0036E4AE /* Stop.h */,
 				8490D63A131BE03E0036E4AE /* Stop.m */,
 				8490D63C131BE0F10036E4AE /* StopSchedule.h */,
 				8490D63D131BE0F10036E4AE /* StopSchedule.m */,
+				848A6F3F1492C8660071998E /* City.h */,
+				848A6F401492C8660071998E /* City.m */,
+				849D9155149426A900BD2FA1 /* DayTypes.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -390,17 +640,52 @@
 			name = map;
 			sourceTree = "<group>";
 		};
+		849D915B149432FC00BD2FA1 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				84867A2C14953B8100991AFD /* parsers */,
+				8488D6AB1336B7A100D29132 /* DatabaseManager.h */,
+				8488D6AC1336B7A100D29132 /* DatabaseManager.m */,
+				84867A321495462A00991AFD /* RouteService.h */,
+				84867A331495462A00991AFD /* RouteService.m */,
+				848F75F714A88E9000FEBA3C /* PreferencesService.h */,
+				848F75F814A88E9000FEBA3C /* PreferencesService.m */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		849D915C149433F700BD2FA1 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				849D9170149435A300BD2FA1 /* RawSchedule.h */,
+				849D9171149435A300BD2FA1 /* RawSchedule.m */,
+				84867A1D1495347700991AFD /* ScheduleData.h */,
+				84867A1E1495347700991AFD /* ScheduleData.m */,
+				847AB0D41593C06E0086C886 /* StopHeader.h */,
+				847AB0D51593C06E0086C886 /* StopHeader.m */,
+				847AB0D81593C0AA0086C886 /* RouteHeader.h */,
+				847AB0D91593C0AA0086C886 /* RouteHeader.m */,
+			);
+			name = raw;
+			sourceTree = "<group>";
+		};
 		84C97AF2131D24F7003A1990 /* table */ = {
 			isa = PBXGroup;
 			children = (
+				8484156B1321335600E64339 /* RoutesViewHeader.xib */,
 				84C97AF0131D24F1003A1990 /* RoutesViewCell.xib */,
 				84EEB1A9132049D1003A961D /* DirectionsViewCell.xib */,
 				848414F813210DB200E64339 /* StopsViewCell.xib */,
 				848414FA13210DBD00E64339 /* StopSchedulesViewCell.xib */,
-				8484156B1321335600E64339 /* RoutesViewHeader.xib */,
 				848415EE13214D8600E64339 /* DirectionsViewHeader.xib */,
 				8477F27A1322E27700ED4A81 /* StopsViewHeader.xib */,
 				8477F2E91322FA2700ED4A81 /* StopSchedulesViewHeader.xib */,
+				849AFB4913DF751F007E23C0 /* FavouriteRoutesViewHeader.xib */,
+				849AFB4C13DF75D1007E23C0 /* FavouriteStopsViewHeader.xib */,
+				84A8CBAB13E0BCCD0000758F /* FavouriteRoutesViewCell.xib */,
+				8484EFC214AF39A700FD985B /* TransportTypesViewCell.xib */,
+				8474B5FA13E20AE900FA2249 /* FavouriteStopsViewCell.xib */,
+				84806BFE14F0590200C51640 /* TransportTypesViewHeader.xib */,
 			);
 			name = table;
 			sourceTree = "<group>";
@@ -408,9 +693,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Rigas Satiksme */ = {
+		1D6058900D05DD3D006BFB54 /* Transport in Riga */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Rigas Satiksme" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Transport in Riga" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -420,9 +705,9 @@
 			);
 			dependencies = (
 			);
-			name = "Rigas Satiksme";
+			name = "Transport in Riga";
 			productName = PublicTransport;
-			productReference = 1D6058910D05DD3D006BFB54 /* PublicTransport.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Transport in Riga.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -444,7 +729,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Rigas Satiksme */,
+				1D6058900D05DD3D006BFB54 /* Transport in Riga */,
 			);
 		};
 /* End PBXProject section */
@@ -456,14 +741,10 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* TransportTypesView.xib in Resources */,
-				848FA3EE13151A9B00F58900 /* ic_trolleybus.png in Resources */,
-				848FA3F013151AAB00F58900 /* ic_tram.png in Resources */,
 				848FA45A131560A900F58900 /* FavoritesView.xib in Resources */,
 				848E478C1315A3E500702554 /* RoutesView.xib in Resources */,
 				8490D5DB131BD4100036E4AE /* ic_home.png in Resources */,
 				8490D5DC131BD4100036E4AE /* ic_home@2x.png in Resources */,
-				8457995F131BF75F00EDC6F0 /* icon.png in Resources */,
-				84579960131BF75F00EDC6F0 /* icon@2x.png in Resources */,
 				84C97AF1131D24F1003A1990 /* RoutesViewCell.xib in Resources */,
 				84EEB16413203E44003A961D /* DirectionsView.xib in Resources */,
 				84EEB169132040DA003A961D /* StopsView.xib in Resources */,
@@ -475,7 +756,6 @@
 				848414FB13210DBD00E64339 /* StopSchedulesViewCell.xib in Resources */,
 				8484156C1321335600E64339 /* RoutesViewHeader.xib in Resources */,
 				848415EF13214D8600E64339 /* DirectionsViewHeader.xib in Resources */,
-				8477F2741322A9F100ED4A81 /* ic_bus.png in Resources */,
 				8477F27B1322E27700ED4A81 /* StopsViewHeader.xib in Resources */,
 				8477F2EA1322FA2700ED4A81 /* StopSchedulesViewHeader.xib in Resources */,
 				8488D68E1336AB2C00D29132 /* schedule.db in Resources */,
@@ -483,6 +763,21 @@
 				848DFE45134DABD20024B7BA /* StopMapView.xib in Resources */,
 				848BF1C1135CDA3B00896867 /* FavouriteRoutesView.xib in Resources */,
 				848BF1C6135CDA4800896867 /* FavouriteStopsView.xib in Resources */,
+				849AFB4A13DF751F007E23C0 /* FavouriteRoutesViewHeader.xib in Resources */,
+				849AFB4D13DF75D1007E23C0 /* FavouriteStopsViewHeader.xib in Resources */,
+				84A8CBAC13E0BCCD0000758F /* FavouriteRoutesViewCell.xib in Resources */,
+				8474B5FB13E20AE900FA2249 /* FavouriteStopsViewCell.xib in Resources */,
+				848F846F13E74F3800188683 /* ic_bus_favicon.png in Resources */,
+				848F847313E74F4400188683 /* ic_minibus_favicon.png in Resources */,
+				848F847413E74F4400188683 /* ic_tram_favicon.png in Resources */,
+				848F847513E74F4400188683 /* ic_trolleybus_favicon.png in Resources */,
+				8484EFC314AF39A700FD985B /* TransportTypesViewCell.xib in Resources */,
+				8493AEE614B9B45E00EA2F3D /* Default@2x.png in Resources */,
+				84FD9BD614B9B57C00E43976 /* Default.png in Resources */,
+				84FD9BEE14B9C04A00E43976 /* Settings.bundle in Resources */,
+				84FD9C3B14B9E76400E43976 /* icon.png in Resources */,
+				84806BFF14F0590200C51640 /* TransportTypesViewHeader.xib in Resources */,
+				847AB0CF1593B9680086C886 /* riga.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,10 +794,8 @@
 				848FA3C81315120600F58900 /* GradientView.m in Sources */,
 				848FA459131560A900F58900 /* FavoritesViewController.m in Sources */,
 				848E478B1315A3E500702554 /* RoutesViewController.m in Sources */,
-				848E47C31315B19B00702554 /* RouteNavigationController.m in Sources */,
 				8490D5ED131BD84B0036E4AE /* TransportType.m in Sources */,
 				8490D635131BDD850036E4AE /* Route.m in Sources */,
-				8490D638131BDFBC0036E4AE /* Direction.m in Sources */,
 				8490D63B131BE03E0036E4AE /* Stop.m in Sources */,
 				8490D63E131BE0F10036E4AE /* StopSchedule.m in Sources */,
 				84EEB16313203E44003A961D /* DirectionsViewController.m in Sources */,
@@ -517,6 +810,41 @@
 				848DFE44134DABD20024B7BA /* StopMapController.m in Sources */,
 				848BF1C0135CDA3B00896867 /* FavouriteRoutesController.m in Sources */,
 				848BF1C5135CDA4800896867 /* FavouriteStopsController.m in Sources */,
+				848A6F411492C8660071998E /* City.m in Sources */,
+				849D9172149435A300BD2FA1 /* RawSchedule.m in Sources */,
+				84867A1F1495347700991AFD /* ScheduleData.m in Sources */,
+				84867A2F14953C3500991AFD /* StopParser.m in Sources */,
+				84867A341495462A00991AFD /* RouteService.m in Sources */,
+				84850F6A1497CF5900B43D2B /* RouteParser.m in Sources */,
+				8486DBCC14A78D2A002EF861 /* ioapi.c in Sources */,
+				8486DBCD14A78D2A002EF861 /* mztools.c in Sources */,
+				8486DBCE14A78D2A002EF861 /* unzip.c in Sources */,
+				8486DBCF14A78D2A002EF861 /* zip.c in Sources */,
+				8486DBD014A78D2A002EF861 /* FileInZipInfo.m in Sources */,
+				8486DBD114A78D2A002EF861 /* ZipException.m in Sources */,
+				8486DBD214A78D2A002EF861 /* ZipFile.m in Sources */,
+				8486DBD314A78D2A002EF861 /* ZipReadStream.m in Sources */,
+				8486DBD414A78D2A002EF861 /* ZipWriteStream.m in Sources */,
+				8486DBD514A78D2A002EF861 /* adler32.c in Sources */,
+				8486DBD614A78D2A002EF861 /* compress.c in Sources */,
+				8486DBD714A78D2A002EF861 /* crc32.c in Sources */,
+				8486DBD814A78D2A002EF861 /* deflate.c in Sources */,
+				8486DBD914A78D2A002EF861 /* gzio.c in Sources */,
+				8486DBDA14A78D2A002EF861 /* infback.c in Sources */,
+				8486DBDB14A78D2A002EF861 /* inffast.c in Sources */,
+				8486DBDC14A78D2A002EF861 /* inflate.c in Sources */,
+				8486DBDD14A78D2A002EF861 /* inftrees.c in Sources */,
+				8486DBDE14A78D2A002EF861 /* trees.c in Sources */,
+				8486DBDF14A78D2A002EF861 /* uncompr.c in Sources */,
+				8486DBE014A78D2A002EF861 /* zutil.c in Sources */,
+				8486585C14A7CDE800D292EF /* NSStringExtensions.m in Sources */,
+				848F75F914A88E9000FEBA3C /* PreferencesService.m in Sources */,
+				8489F12814AF8D1800BA5C2D /* StopPinAnnotation.m in Sources */,
+				848321C514BA50480037BC96 /* UIColorExtensions.m in Sources */,
+				8486964614F03956009AF7BB /* MBProgressHUD.m in Sources */,
+				847AB0D61593C06E0086C886 /* StopHeader.m in Sources */,
+				847AB0DA1593C0AA0086C886 /* RouteHeader.m in Sources */,
+				847E1C2015991498004254B3 /* HeaderParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +873,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PublicTransport_Prefix.pch;
 				INFOPLIST_FILE = "PublicTransport-Info.plist";
-				PRODUCT_NAME = PublicTransport;
+				PRODUCT_NAME = "Transport in Riga";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -580,7 +908,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Rigas Satiksme" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Transport in Riga" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

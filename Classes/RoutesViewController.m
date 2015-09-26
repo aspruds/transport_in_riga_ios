@@ -8,7 +8,7 @@
 
 #import "RoutesViewController.h"
 #import "Route.h"
-
+#import "RouteService.h"
 
 @implementation RoutesViewController
 
@@ -17,6 +17,7 @@
 @synthesize routes;
 @synthesize directionsView;
 @synthesize tableHeader;
+@synthesize hud;
 
 static const int kHeaderHeight = 28;
 static const int kHeaderTransportTypeTag = 1;
@@ -76,7 +77,7 @@ static const int kRouteTitleLabelTag = 2;
 	routeNumberLabel.text = route.number;
 	 		   
 	UILabel* routeTitleLabel = (UILabel*)[cell viewWithTag:kRouteTitleLabelTag];
-	routeTitleLabel.text = route.title;
+	routeTitleLabel.text = route.name;
 
 	return cell;
 }
@@ -137,23 +138,31 @@ static const int kRouteTitleLabelTag = 2;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	
-	DatabaseManager* db = [[DatabaseManager alloc] init];
-	[db open];
-	self.routes = [db getRoutesByTransportType:transportType];
-	[db close];
-	[db release];
-	
-	[self.tableView reloadData];
+	hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:hud];
+	hud.labelText = NSLocalizedString(@"Loading...", @"Progress bar text");	
+	[hud showWhileExecuting:@selector(loadRoutes) onTarget:self withObject:nil animated:YES];	
 	
 	//[self setTitle:transportType.title];
 	[self setTitle:NSLocalizedString(@"Routes", @"View title")];	
+
+	[[self navigationController] setNavigationBarHidden:NO animated:NO];
+	[super viewWillAppear:animated];
+}
+
+-(void) loadRoutes {
+	RouteService* routeService = [RouteService getInstance];
+	self.routes = [[routeService getRoutesByTransportType:transportType] retain];
+	
+	[self performSelectorOnMainThread:@selector(updateTable) withObject:nil waitUntilDone:NO];
+}
+
+-(void) updateTable {
+	[self.tableView reloadData];
 	
 	if(tableHeader != nil) {
 		[self updateHeader];
 	}
-	[[self navigationController] setNavigationBarHidden:NO animated:NO];
-	[super viewWillAppear:animated];
 }
 
 - (void)dealloc {
@@ -162,8 +171,8 @@ static const int kRouteTitleLabelTag = 2;
 	[tableHeader release];
 	[directionsView release];
 	[transportType release];
+	[hud release];
     [super dealloc];
 }
-
 
 @end

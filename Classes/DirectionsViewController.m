@@ -7,9 +7,12 @@
 //
 
 #import "DirectionsViewController.h"
-#import "Direction.h"
 #import "DatabaseManager.h"
 #import "RouteMapController.h"
+#import "RouteService.h"
+#import "Route.h"
+#import "City.h"
+#import "PreferencesService.h"
 
 @implementation DirectionsViewController
 
@@ -19,8 +22,9 @@
 @synthesize stopsView;
 @synthesize routeMapController;
 @synthesize route;
+@synthesize hud;
 
-static const int kYes = 0;
+static const int kYes = 1;
 
 static const int kDirectionNameLabelTag = 1;
 static const int kDirectionMapButtonTag = 2;
@@ -46,24 +50,35 @@ static const int kHeaderTransportTypeTag = 1;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	DatabaseManager* db = [[DatabaseManager alloc] init];
-	[db open];
-	self.directions = [db getDirectionsByRoute:route];
-	[db close];
-	[db release];
-	
-	[self.tableView reloadData];
-	
-	if(tableHeader != nil) {
-		[self updateHeader];
-	}
-	
+	hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:hud];
+	hud.labelText = NSLocalizedString(@"Loading...", @"Progress bar text");	
+	[hud showWhileExecuting:@selector(loadDirections) onTarget:self withObject:nil animated:YES];
+
 	UIBarButtonItem* addToFavsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(onAddToFavouritesPressed:)];
 	self.navigationItem.rightBarButtonItem = addToFavsButton;
 	[addToFavsButton release];
 	
 	[super viewWillAppear:animated];
 }
+
+-(void) loadDirections {
+	BOOL onlyMainDirections = [PreferencesService getOnlyMainDirectionsSetting];
+	
+	RouteService* routeService = [RouteService getInstance];
+	directions = [[routeService getDirectionsByRoute:route onlyMainDirections:onlyMainDirections] retain];
+	
+	[self performSelectorOnMainThread:@selector(updateTable) withObject:nil waitUntilDone:NO];
+}
+
+-(void) updateTable {
+	[self.tableView reloadData];
+	
+	if(tableHeader != nil) {
+		[self updateHeader];
+	}
+}
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -96,7 +111,7 @@ static const int kHeaderTransportTypeTag = 1;
 	}
 	
 	NSUInteger row = [indexPath row];
-	Direction* direction = [self.directions objectAtIndex:row];
+	Route* direction = [self.directions objectAtIndex:row];
 	
 	UILabel* directionNameLabel = (UILabel*)[cell viewWithTag:kDirectionNameLabelTag];
 	directionNameLabel.text = direction.name;
@@ -115,8 +130,8 @@ static const int kHeaderTransportTypeTag = 1;
 	}
 	
 	NSUInteger row = [indexPath row];
-	Direction* direction = [self.directions objectAtIndex:row];
-	stopsView.direction = direction;
+	Route* direction = [self.directions objectAtIndex:row];
+	stopsView.route = direction;
 	
     [self.navigationController pushViewController:stopsView animated:YES];
 }
@@ -147,7 +162,7 @@ static const int kHeaderTransportTypeTag = 1;
 
 -(IBAction)mapButtonPressed:(id)sender {
 	UIButton* senderButton = (UIButton*)sender;
-	Direction* direction = [self.directions objectAtIndex:senderButton.tag];
+	Route* direction = [self.directions objectAtIndex:senderButton.tag];
 	
 	if(routeMapController == nil) {
 		RouteMapController *aRouteMapController = [[RouteMapController alloc] initWithNibName:@"RouteMapView" bundle:nil];
@@ -155,18 +170,18 @@ static const int kHeaderTransportTypeTag = 1;
 		[aRouteMapController release];
 	}
 
-	routeMapController.direction = direction;
+	routeMapController.route = direction;
 	
 	[self.navigationController pushViewController:routeMapController animated:YES];
 }
 
 -(void) onAddToFavouritesPressed:(UIBarButtonItem*)sender {
 	UIAlertView* alert = [[UIAlertView alloc] init];
-	[alert setTitle:@"Confirm"];
-	[alert setMessage:@"Add to favourites?"];
+	[alert setTitle:NSLocalizedString(@"Confirm", @"Dialog title")];
+	[alert setMessage:NSLocalizedString(@"Add to favourites?", "Dialog prompt")];
 	[alert setDelegate:self];
-	[alert addButtonWithTitle:@"Yes"];
-	[alert addButtonWithTitle:@"No"];
+	[alert addButtonWithTitle:NSLocalizedString(@"No", "Button title")];	
+	[alert addButtonWithTitle:NSLocalizedString(@"Yes", "Button title")];
 	[alert show];
 	[alert release];
 }
@@ -174,9 +189,11 @@ static const int kHeaderTransportTypeTag = 1;
 -(void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 	if (buttonIndex == kYes) {
+		City* city = [PreferencesService getCurrentCity];
+		
 		DatabaseManager* db = [[DatabaseManager alloc] init];
 		[db open];
-		[db addRouteToFavourites:route];
+		[db addRouteToFavourites:city route:route];
 		[db close];
 		[db release];
 	}
@@ -199,6 +216,7 @@ static const int kHeaderTransportTypeTag = 1;
 	self.stopsView = nil;
 	self.routeMapController = nil;
 	self.route = nil;
+	self.hud = nil;
 }
 
 
@@ -209,6 +227,7 @@ static const int kHeaderTransportTypeTag = 1;
 	[stopsView release];
 	[routeMapController release];
 	[route release];
+	[hud release];
     [super dealloc];
 }
 

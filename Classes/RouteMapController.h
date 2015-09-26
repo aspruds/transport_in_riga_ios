@@ -8,14 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "Direction.h"
+#import "Route.h"
+#import "StopSchedulesViewController.h"
 
-@interface RouteMapController : UIViewController {
+@interface RouteMapController : UIViewController<MKMapViewDelegate> {
 	MKMapView* mapView;
-	Direction* direction;
+	Route* route;
+	StopSchedulesViewController *stopSchedulesView;
 }
 
 @property (nonatomic, retain) MKMapView* mapView;
-@property (nonatomic, retain) Direction* direction;
+@property (nonatomic, retain) Route* route;
+@property (nonatomic, retain) NSMutableArray* annotations;
+@property (nonatomic, retain) StopSchedulesViewController* stopSchedulesView;
 
+- (void)zoomToFitMapAnnotations;
 @end

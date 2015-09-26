@@ -1,0 +1,13 @@
+#define kMonday 1
+#define kTuesday 2
+#define kWednesday 3
+#define kThursday 4
+#define kFriday 5
+#define kSaturday 6
+#define kSunday 7
+#define kMondayFriday 12345
+#define kMondayFridaySaturday 123456
+#define kFridaySaturday 56
+#define kSaturdaySunday 67
+#define kEveryDay 1234567
+#define kWorkdaysSundaysHolidays 123457

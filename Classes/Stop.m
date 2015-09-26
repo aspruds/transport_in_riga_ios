@@ -12,24 +12,46 @@
 @implementation Stop
 
 @synthesize stopId;
-@synthesize name;
 @synthesize longitude;
 @synthesize latitude;
-@synthesize direction;
+@synthesize stopsNearby;
+@synthesize name;
+@synthesize info;
+@synthesize street;
+@synthesize area;
+@synthesize city;
+@synthesize route;
 
-- (id)initWithName:sid name:(NSString*)n latitude:(NSNumber*)lat longitude:(NSNumber*)lon {
-	self.stopId = sid;
-	self.name = n;
-	self.latitude = lat;
-	self.longitude = lon;
-	return self;
+- (NSUInteger) hash {
+	NSUInteger prime = 31;
+	NSUInteger result = 1;
+	
+	return prime * result + [stopId intValue];
+}
+
+-(BOOL) isEqual:(id)other {
+	if(other == self) {
+		return YES;
+	}
+	if(!other || ![other isKindOfClass:[self class]]) {
+		return NO;
+	}
+	
+	Stop* otherStop = other;
+	return [stopId isEqual:otherStop.stopId];
 }
 
 - (void)dealloc {
 	[stopId release];
-	[name release];
 	[longitude release];
 	[latitude release];
+	[stopsNearby release];
+	[name release];
+	[info release];
+	[street release];
+	[area release];
+	[city release];
+	[route release];
 	[super dealloc];
 }
 

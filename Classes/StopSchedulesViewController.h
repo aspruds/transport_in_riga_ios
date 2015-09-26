@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Stop.h"
+#import "MBProgressHUD.h"
 
 @interface StopSchedulesViewController : UITableViewController {
 	UITableViewCell* tableCell;
@@ -28,16 +29,17 @@
 @property (nonatomic, retain) NSMutableSet* dayTypes;
 @property (nonatomic, retain) NSMutableArray* nextDepartures;
 @property int currentDayType;
+@property (nonatomic, retain) MBProgressHUD* hud;
 
 - (void) updateHeader;
 - (void) buildStopScheduleMap;
 - (void) addDaySwitchers;
-- (int) getDayByteValue;
+- (int) getDayOfWeek;
 - (void) calculateDayTypes;
-- (void) calculateCurrentDayType;
 - (void) calculateNextDepartures;
 - (IBAction) dayTypeChanged:(id)sender;
 
 - (void) onAddToFavouritesPressed:(UIBarButtonItem*)sender;
-
+- (void) loadSchedules;
+- (void) updateTable;
 @end

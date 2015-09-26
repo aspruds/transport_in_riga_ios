@@ -9,27 +9,59 @@
 #import "PublicTransportAppDelegate.h"
 #import "TransportTypesViewController.h"
 #import "RouteNavigationController.h"
+#import "PreferencesService.h"
+#import "RouteService.h"
 
 @implementation PublicTransportAppDelegate
 
 @synthesize window;
 @synthesize tabBarController;
 @synthesize routeNavigationController;
+@synthesize favouritesNavigationController;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   	
+	[self registerDefaultsFromSettingsBundle];
 	
-    // Add the tab bar controller's view to the window and display.
-    [self.window addSubview:tabBarController.view];
-    [self.window makeKeyAndVisible];
+	RouteService* routeService = [RouteService getInstance];
+	[routeService getTransportTypes];
+	
+	// show status bar
+	[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+	
+	// show main window
+    [window addSubview:tabBarController.view];
+    [window makeKeyAndVisible];
     return YES;
 	
 }
 
+- (void)registerDefaultsFromSettingsBundle {
+    NSString *settingsBundle = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"bundle"];
+    if(!settingsBundle) 
+    {
+        NSLog(@"Could not find Settings.bundle");
+        return;
+    }
+	
+	NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:[settingsBundle stringByAppendingPathComponent:@"Root.plist"]];
+	NSArray *preferences = [settings objectForKey:@"PreferenceSpecifiers"];
+	
+	NSMutableDictionary *defaultsToRegister = [[NSMutableDictionary alloc] initWithCapacity:[preferences count]];
+	for(NSDictionary *prefSpecification in preferences) 
+	{
+		NSString *key = [prefSpecification objectForKey:@"Key"];
+		if(key) 
+		{
+			[defaultsToRegister setObject:[prefSpecification objectForKey:@"DefaultValue"] forKey:key];
+		}
+	}
+	
+	[[NSUserDefaults standardUserDefaults] registerDefaults:defaultsToRegister];
+	[defaultsToRegister release];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -99,6 +131,7 @@
     [tabBarController release];
     [window release];
 	[routeNavigationController release];
+	[favouritesNavigationController release];
     [super dealloc];
 }
 

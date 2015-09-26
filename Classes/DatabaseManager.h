@@ -11,8 +11,10 @@
 #import "Route.h"
 #import "Direction.h"
 #import "Stop.h"
+#import "City.h"
 #import "FMDatabase.h"
 #import "FMDatabaseAdditions.h"
+#import "RouteService.h"
 
 @interface DatabaseManager : NSObject {
 	FMDatabase* database;
@@ -23,23 +25,18 @@
 - (void) open;
 - (void) close;
 - (void) openDatabase;
-- (void) copyDatabase;
-- (void) deleteDatabase;
+- (void) createDatabase;
 - (void) upgradeDatabase:(int)oldVersion newVersion:(int)version;
 - (NSString*) getDatabasePath;
 - (int) getDatabaseVersion;
 - (void) setDatabaseVersion:(int)newVersion;
 
-- (NSArray*) getRoutesByTransportType:(TransportType*)transportType;
-- (NSArray*) getDirectionsByRoute:(Route*)route;
-- (NSArray*) getStopsByDirection:(Direction*)direction;
-- (NSArray*) getStopSchedule:(Stop*)stop;
-- (BOOL) isStopAddedToFavourites:(Stop*)stop;
-- (BOOL) isRouteAddedToFavourites:(Route*)route;
-- (void) addRouteToFavourites:(Route*)route;
-- (void) addStopToFavourites:(Stop*)stop;
-- (NSArray*) getFavouriteRoutes;
-- (NSArray*) getFavouriteStops;
-- (void) deleteFavouriteStop:(Stop*)stop;
-- (void) deleteFavouriteRoute:(Route*)route;
+- (BOOL) isStopAddedToFavourites:(City*)city stop:(Stop*)stop;
+- (BOOL) isRouteAddedToFavourites:(City*)city route:(Route*)route;
+- (void) addRouteToFavourites:(City*)city route:(Route*)route;
+- (void) addStopToFavourites:(City*)city stop:(Stop*)stop;
+- (NSArray*) getFavouriteRoutes:(City*)city;
+- (NSArray*) getFavouriteStops:(City*)city;
+- (void) deleteFavouriteStop:(City*)city stop:(Stop*)stop;
+- (void) deleteFavouriteRoute:(City*)city route:(Route*)route;
 @end

@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DirectionsViewController.h"
+#import "MBProgressHUD.h"
 
-
-@interface FavouriteRoutesController : UIViewController {
-
+@interface FavouriteRoutesController : UITableViewController {
+	UITableViewCell* tableCell;
+	UIView* tableHeader;
 }
 
+@property (nonatomic, retain) NSArray* routes;
+@property (nonatomic, retain) IBOutlet UITableViewCell* tableCell;
+@property (nonatomic, retain) IBOutlet UIView* tableHeader;
+@property (nonatomic, retain) DirectionsViewController* directionsView;
+@property (nonatomic, retain) MBProgressHUD* hud;
+
+- (void) loadFavouriteRoutes;
+- (void) updateTable;
 @end

@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Stop.h"
+#import "StopPinAnnotation.h"
+#import "StopSchedulesViewController.h"
 
-@interface StopMapController : UIViewController {
+@interface StopMapController : UIViewController<MKMapViewDelegate> {
 	MKMapView* mapView;
 	Stop* stop;
 }
 
 @property (nonatomic, retain) MKMapView* mapView;
 @property (nonatomic, retain) Stop* stop;
-
+@property (nonatomic, retain) StopPinAnnotation* stopAnnotation;
+@property (nonatomic, retain) StopSchedulesViewController* stopSchedulesView;
 @end

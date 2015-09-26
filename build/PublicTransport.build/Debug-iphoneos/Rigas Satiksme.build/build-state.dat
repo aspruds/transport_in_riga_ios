@@ -1,0 +1,415 @@
+TRigas Satiksme
+v7
+r1
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/admin/Documents/PublicTransport/../../.Trash/ic_bus.png
+c000000004D449F3C0000000000000CA9
+t1296342844
+s3241
+
+N/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon.png
+c000000004D618DB3000000000000080D
+t1298238899
+s2061
+
+N/Users/admin/Documents/PublicTransport/../../Dropbox/Development/iPhone/Satiksme/icon@2x.png
+c000000004D6190A3000000000000132F
+t1298239651
+s4911
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.h
+c000000004D656D0800000000000000DC
+t1298492680
+s220
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.m
+c000000004D656D5D00000000000005A1
+t1298492765
+s1441
+i"FavoritesController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib
+c000000004D656B7600000000000044BB
+t1298492278
+s17595
+
+N/Users/admin/Documents/PublicTransport/Classes/GradientView.h
+c000000004D64DA8600000000000000CE
+t1298455174
+s206
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/GradientView.m
+c000000004D64E296000000000000050C
+t1298457238
+s1292
+i"GradientView.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.h
+c000000004D657B8300000000000002C7
+t1298496387
+s711
+i<UIKit/UIKit.h>
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m
+c000000004D657B9B0000000000000CF7
+t1298496411
+s3319
+i"PublicTransportAppDelegate.h"
+i"PublicTransportViewController.h"
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.h
+c000000004D65153A00000000000000FA
+t1298470202
+s250
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m
+c000000004D65153200000000000004AA
+t1298470194
+s1194
+i"PublicTransportViewController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.h
+c000000004D657A2C00000000000000F8
+t1298496044
+s248
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m
+c000000004D657A1B0000000000000635
+t1298496027
+s1589
+i"RouteNavigationController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.h
+c000000004D656C6500000000000000E0
+t1298492517
+s224
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.m
+c000000004D656C6500000000000005A2
+t1298492517
+s1442
+i"RoutesController.h"
+
+N/Users/admin/Documents/PublicTransport/Classes/RoutesController.xib
+c000000004D656C65000000000000186B
+t1298492517
+s6251
+
+N/Users/admin/Documents/PublicTransport/MainWindow.xib
+c000000004D65793100000000000072FD
+t1298495793
+s29437
+
+N/Users/admin/Documents/PublicTransport/PublicTransportViewController.xib
+c000000004D656F7700000000000062A7
+t1298493303
+s25255
+
+N/Users/admin/Documents/PublicTransport/PublicTransport_Prefix.pch
+c000000004D64D5B500000000000000C7
+t1298453941
+s199
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app.dSYM
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/FavoritesController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/Info.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/MainWindow.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/PkgInfo
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/PublicTransport
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/PublicTransportViewController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ResourceRules.plist
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/RoutesController.nib
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_bus.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_tram.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_trolleybus.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/icon.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/icon@2x.png
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/FavoritesController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/GradientView.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransport
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransport.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransportAppDelegate.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransportViewController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/RouteNavigationController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/RoutesController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/FavoritesController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/GradientView.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransport
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransport.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransportAppDelegate.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransportViewController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/RouteNavigationController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/RoutesController.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/admin/Documents/PublicTransport/ic_tram.png
+c000000004D51A8AF0000000000000C1C
+t1297197231
+s3100
+
+N/Users/admin/Documents/PublicTransport/ic_trolleybus.png
+c000000004D449C8E0000000000000F9A
+t1296342158
+s3994
+
+N/Users/admin/Documents/PublicTransport/main.m
+c000000004D64D5B50000000000000165
+t1298453941
+s357
+i<UIKit/UIKit.h>
+
+N/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-bcqhmdjniloxpddzhmnyxasojurn/PublicTransport_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-daqgefckzueqrrhcfqihdrdvqdne/PublicTransport_Prefix.pch.gch
+t2
+s0
+
+NPublicTransport-Info.plist
+c000000004D6567DC0000000000000397
+t1298491356
+s919
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/FavoritesController.o" /Users/admin/Documents/PublicTransport/Classes/FavoritesController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/GradientView.o" /Users/admin/Documents/PublicTransport/Classes/GradientView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransportAppDelegate.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransportViewController.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/RouteNavigationController.o" /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/RoutesController.o" /Users/admin/Documents/PublicTransport/Classes/RoutesController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/main.o" /Users/admin/Documents/PublicTransport/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/FavoritesController.o" /Users/admin/Documents/PublicTransport/Classes/FavoritesController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/GradientView.o" /Users/admin/Documents/PublicTransport/Classes/GradientView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransportAppDelegate.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransportViewController.o" /Users/admin/Documents/PublicTransport/Classes/PublicTransportViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/RouteNavigationController.o" /Users/admin/Documents/PublicTransport/Classes/RouteNavigationController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/RoutesController.o" /Users/admin/Documents/PublicTransport/Classes/RoutesController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/main.o" /Users/admin/Documents/PublicTransport/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/FavoritesController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/Classes/RoutesController.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/MainWindow.xib
+r0
+
+CCompileXIB /Users/admin/Documents/PublicTransport/PublicTransportViewController.xib
+r0
+
+CCopyPNGFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_bus.png ../../.Trash/ic_bus.png
+r0
+
+CCopyPNGFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_tram.png ic_tram.png
+r0
+
+CCopyPNGFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/ic_trolleybus.png ic_trolleybus.png
+r0
+
+CCopyPNGFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/icon.png ../../Dropbox/Development/iPhone/Satiksme/icon.png
+r0
+
+CCopyPNGFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/icon@2x.png ../../Dropbox/Development/iPhone/Satiksme/icon@2x.png
+r0
+
+CCpResource build/Debug-iphoneos/PublicTransport.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+r0
+
+CCreateUniversalBinary /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/PublicTransport normal "armv6 armv7"
+r0
+
+CGenerateDSYMFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app.dSYM /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/PublicTransport
+r0
+
+CLd "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv6/PublicTransport" normal armv6
+r0
+
+CLd "/Users/admin/Documents/PublicTransport/build/PublicTransport.build/Debug-iphoneos/Rigas Satiksme.build/Objects-normal/armv7/PublicTransport" normal armv7
+r0
+
+CProcessInfoPlistFile /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app/Info.plist PublicTransport-Info.plist
+r0
+
+CProcessPCH /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-bcqhmdjniloxpddzhmnyxasojurn/PublicTransport_Prefix.pch.gch PublicTransport_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/25/25v3IW84FV8p9taCMsBQcE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PublicTransport_Prefix-daqgefckzueqrrhcfqihdrdvqdne/PublicTransport_Prefix.pch.gch PublicTransport_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/admin/Documents/PublicTransport/build/Debug-iphoneos/PublicTransport.app
+r0
+

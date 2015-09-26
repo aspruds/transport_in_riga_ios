@@ -9,7 +9,9 @@
 #import "StopsViewController.h"
 #import "Stop.h"
 #import "DatabaseManager.h"
-
+#import "RouteService.h"
+#import "City.h"
+#import "PreferencesService.h"
 
 @implementation StopsViewController
 
@@ -17,10 +19,11 @@
 @synthesize stops;
 @synthesize stopSchedulesView;
 @synthesize tableHeader;
-@synthesize direction;
+@synthesize route;
 @synthesize stopMapController;
+@synthesize hud;
 
-static const int kYes = 0;
+static const int kYes = 1;
 
 static const int kStopNameLabelTag = 1;
 static const int kStopMapButtonTag = 2;
@@ -47,22 +50,31 @@ static const int kHeaderDirectionTag = 2;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	DatabaseManager* db = [[DatabaseManager alloc] init];
-	[db open];
-	self.stops = [db getStopsByDirection:direction];
-	[db close];
-	[db release];
-	
-	[self.tableView reloadData];
+	hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:hud];
+	hud.labelText = NSLocalizedString(@"Loading...", @"Progress bar text");	
+	[hud showWhileExecuting:@selector(loadStops) onTarget:self withObject:nil animated:YES];
 	
 	UIBarButtonItem* addToFavsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(onAddToFavouritesPressed:)];
 	self.navigationItem.rightBarButtonItem = addToFavsButton;
 	[addToFavsButton release];
 	
+
+	[super viewWillAppear:animated];
+}
+
+- (void) loadStops {
+	RouteService* routeService = [RouteService getInstance];
+	self.stops = [[routeService getStopsByRoute:route] retain];
+	
+	[self performSelectorOnMainThread:@selector(updateTable) withObject:nil waitUntilDone:NO];
+}
+
+- (void) updateTable {
+	[self.tableView reloadData];
 	if(tableHeader != nil) {
 		[self updateHeader];
 	}
-	[super viewWillAppear:animated];
 }
 
 /*
@@ -167,13 +179,13 @@ static const int kHeaderDirectionTag = 2;
 - (void) updateHeader {	
 	UILabel* transportTypeLabel = (UILabel*)[tableHeader viewWithTag:kHeaderTransportTypeTag];
 	transportTypeLabel.text = 
-	[[direction.route.transportType.title stringByAppendingString:@" "]
-	 stringByAppendingString:direction.route.number];
+	[[route.transportType.title stringByAppendingString:@" "]
+	 stringByAppendingString:route.number];
 	
 	NSString* directionName = nil;
-	NSArray* components = [direction.name componentsSeparatedByString:@"-"];
+	NSArray* components = [route.name componentsSeparatedByString:@"-"];
 	if([components count] < 2) {
-		directionName = direction.name;
+		directionName = route.name;
 	}
 	else {
 		directionName = [components objectAtIndex:1];
@@ -185,21 +197,22 @@ static const int kHeaderDirectionTag = 2;
 
 -(void) onAddToFavouritesPressed:(UIBarButtonItem*)sender {
 	UIAlertView* alert = [[UIAlertView alloc] init];
-	[alert setTitle:@"Confirm"];
-	[alert setMessage:@"Add to favourites?"];
+	[alert setTitle:NSLocalizedString(@"Confirm", @"Dialog title")];
+	[alert setMessage:NSLocalizedString(@"Add to favourites?", "Dialog prompt")];
 	[alert setDelegate:self];
-	[alert addButtonWithTitle:@"Yes"];
-	[alert addButtonWithTitle:@"No"];
+	[alert addButtonWithTitle:NSLocalizedString(@"No", "Button title")];
+	[alert addButtonWithTitle:NSLocalizedString(@"Yes", "Button title")];	
 	[alert show];
 	[alert release];
 }
 
 -(void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	City* city = [PreferencesService getCurrentCity];
 	
 	if (buttonIndex == kYes) {
 		DatabaseManager* db = [[DatabaseManager alloc] init];
 		[db open];
-		[db addRouteToFavourites:direction.route];
+		[db addRouteToFavourites:city route:route];
 		[db close];
 		[db release];
 	}
@@ -211,18 +224,20 @@ static const int kHeaderDirectionTag = 2;
 	self.tableCell = nil;
 	self.stopSchedulesView = nil;
 	self.tableHeader = nil;
-	self.direction = nil;
+	self.route = nil;
 	self.stopMapController = nil;
+	self.hud = nil;
 }
 
 - (void)dealloc {
-	[super dealloc];
 	[stops release];
 	[tableCell release];
 	[stopSchedulesView release];
 	[tableHeader release];
-	[direction release];
+	[route release];
 	[stopMapController release];
+	[hud release];
+	[super dealloc];
 }
 
 

@@ -8,39 +8,41 @@
 
 #import "StopSchedule.h"
 
-
 @implementation StopSchedule
 
-@synthesize stopScheduleId;
-@synthesize timingId;
+@synthesize stop;
+@synthesize route;
 @synthesize hours;
 @synthesize minutes;
 @synthesize daysValid;
 @synthesize lowfloor;
 @synthesize shortened;
+@synthesize changed;
 
-- (id)init:sid timingId:(NSNumber*)tid hours:(NSNumber*)hrs 
-		   minutes:(NSNumber*)mins daysValid:(NSNumber*)valid lowfloor:(NSNumber*)isLow shortened:(NSNumber*)isShort {
+- (id)init:st route:(Route*)rt hours:(NSNumber*)hrs 
+   minutes:(NSNumber*)mins daysValid:(NSNumber*)valid lowfloor:(NSNumber*)isLow shortened:(NSNumber*)isShort changed:(NSNumber*)isChanged {
 	
-	self.stopScheduleId = sid;
-	self.timingId = tid;
+	self.stop = st;
+	self.route = rt;
 	self.hours = hrs;
 	self.minutes = mins;
 	self.daysValid = valid;
 	self.lowfloor = isLow;
 	self.shortened = isShort;
+	self.changed = isChanged;
 	
 	return self;
 }
 
 - (void)dealloc {
-	[stopScheduleId release];
-	[timingId release];
+	[stop release];
+	[route release];
 	[hours release];
 	[minutes release];
 	[daysValid release];
 	[lowfloor release];
 	[shortened release];
+	[changed release];
 	[super dealloc];
 }
 @end

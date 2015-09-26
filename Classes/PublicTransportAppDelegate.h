@@ -7,20 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RouteNavigationController.h"
 
 @class PublicTransportViewController;
 
 @interface PublicTransportAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-    UIWindow *window;
-    UITabBarController *tabBarController;
-	RouteNavigationController *routeNavigationController;
+    UIWindow* window;
+    UITabBarController* tabBarController;
+	UINavigationController* routeNavigationController;
+	UINavigationController* favouritesNavigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
-@property (nonatomic, retain) IBOutlet RouteNavigationController *routeNavigationController;
+@property (nonatomic, retain) IBOutlet UINavigationController *routeNavigationController;
+@property (nonatomic, retain) IBOutlet UINavigationController *favouritesNavigationController;
 
-
+- (void)registerDefaultsFromSettingsBundle;
 @end
 

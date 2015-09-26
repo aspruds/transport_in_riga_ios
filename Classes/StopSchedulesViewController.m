@@ -8,7 +8,13 @@
 
 #import "StopSchedulesViewController.h"
 #import "StopSchedule.h"
+#import "RouteService.h"
 #import "DatabaseManager.h"
+#import "City.h"
+#import "PreferencesService.h"
+#import "DayTypes.h"
+#import "NSStringExtensions.h"
+#import "UIColorExtensions.h"
 
 @implementation StopSchedulesViewController
 
@@ -21,11 +27,12 @@
 @synthesize currentDayType;
 @synthesize dayTypes;
 @synthesize nextDepartures;
+@synthesize hud;
 
 static const int kYes = 1;
 
 static const int kCellHeight = 26;
-static const int kHeaderHeight = 114;
+static const int kHeaderHeight = 120;
 static const int kHeaderTransportTypeTag = 1;
 static const int kHeaderDirectionTag = 2;
 static const int kHeaderStopTitleTag = 3;
@@ -33,8 +40,9 @@ static const int kHeaderNextDepartureOneTag = 4;
 static const int kHeaderNextDepartureTwoTag = 5;
 static const int kHeaderDaySwitcherTag = 6;
 
-static const int kMinutesLabelTopMargin = 4;
-static const int kMinutesLabelSpacer = 3;
+static const int kMinutesLabelTopMargin = 3;
+static const int kMinutesLabelSpacer = 4;
+static const int kMinutesFontSize = 15;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -54,33 +62,39 @@ static const int kMinutesLabelSpacer = 3;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	
-	DatabaseManager* db = [[DatabaseManager alloc] init];
-	[db open];
-	self.stopSchedules = [db getStopSchedule:stop];
-	[db close];
-	[db release];
-	
-	[self buildStopScheduleMap];
-	[self calculateDayTypes];
-	[self calculateCurrentDayType];
-	[self updateHeader];
+	hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:hud];
+	hud.labelText = NSLocalizedString(@"Loading...", @"Progress bar text");	
+	[hud showWhileExecuting:@selector(loadSchedules) onTarget:self withObject:nil animated:YES];
 	
 	UIBarButtonItem* addToFavsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(onAddToFavouritesPressed:)];
 	self.navigationItem.rightBarButtonItem = addToFavsButton;
 	[addToFavsButton release];
 	
-	[self.tableView reloadData];
 	[super viewWillAppear:animated];
+}
+
+-(void) loadSchedules {
+	RouteService* routeService = [RouteService getInstance];
+	self.stopSchedules = [[routeService getStopScheduleByStop:stop] retain];
+	
+	[self buildStopScheduleMap];
+	[self calculateDayTypes];
+	[self updateHeader];
+	
+	[self performSelectorOnMainThread:@selector(updateTable) withObject:nil waitUntilDone:YES];
+}
+
+-(void) updateTable {
+	
+	[self.tableView reloadData];
 }
 
 -(void)buildStopScheduleMap {
 	NSMutableDictionary *aStopScheduleMap = [[NSMutableDictionary alloc] init];
-	NSEnumerator* en = [stopSchedules objectEnumerator];
-	
-	StopSchedule* schedule;
-	while(schedule = [en nextObject]) {
-		if(([schedule.daysValid intValue] & currentDayType) > 0) {
+	for(StopSchedule* schedule in stopSchedules) {
+		
+		if([schedule.daysValid intValue] == currentDayType) {
 			NSMutableArray* stopSchedulesForHour = [aStopScheduleMap objectForKey:schedule.hours];
 			
 			if(stopSchedulesForHour == nil) {
@@ -98,121 +112,110 @@ static const int kMinutesLabelSpacer = 3;
 	[aStopScheduleMap release];
 }
 
-- (void)calculateCurrentDayType {
-	int iCurrentDayType = 0;
-
-	NSEnumerator * dayTypeEnum = [dayTypes objectEnumerator];
-	
-	NSNumber* dayType;
-	while(dayType = [dayTypeEnum nextObject]) {
-		int dayByteValue = [self getDayByteValue];
-		if(([dayType intValue] & dayByteValue) > 0) {
-			iCurrentDayType = [dayType intValue];
-			break;
-		}
-	}
-	self.currentDayType = iCurrentDayType;
-}
-
 - (void)addDaySwitchers {
 	[daySwitcher removeAllSegments];
 
-	NSEnumerator * dayTypeEnum = [dayTypes objectEnumerator];
-	NSNumber* dayType;
-	int i=0;
-	while(dayType = [dayTypeEnum nextObject]) {
+	NSString* currentDay = [NSString stringWithFormat:@"%d", [self getDayOfWeek]];
+	
+	int segmentIndex = 0;
+	for(NSNumber* dayType in dayTypes) {
 		NSString* title = nil;
+		
 		switch([dayType intValue]) {
-			case 1:
+			case kMonday:
 				title = NSLocalizedString(@"Monday", @"Text for day type switcher");
 				break;
-			case 2:
+			case kTuesday:
 				title = NSLocalizedString(@"Tuesday", @"Text for day type switcher");
 				break;
-			case 4:
+			case kWednesday:
 				title = NSLocalizedString(@"Wednesday", @"Text for day type switcher");
 				break;
-			case 8:
+			case kThursday:
 				title = NSLocalizedString(@"Thursday", @"Text for day type switcher");
 				break;
-			case 16:
+			case kFriday:
 				title = NSLocalizedString(@"Friday", @"Text for day type switcher");
 				break;
-			case 32:
+			case kSaturday:
 				title = NSLocalizedString(@"Saturday", @"Text for day type switcher");
 				break;
-			case 64:
+			case kSunday:
 				title = NSLocalizedString(@"Sunday", @"Text for day type switcher");
 				break;
-			case 31:
+			case kMondayFriday:
 				title = NSLocalizedString(@"Workdays", @"Text for day type switcher");
 				break;
-			case 48:
+			case kMondayFridaySaturday:
+				title = NSLocalizedString(@"Workdays, Saturday", @"Text for day type switcher");
+				break;
+			case kFridaySaturday:
 				title = NSLocalizedString(@"Fri-Sat", @"Text for day type switcher");
 				break;
-			case 63:
-				title = NSLocalizedString(@"Mon-Sat", @"Text for day type switcher");
-				break;
-			case 96:
+			case kSaturdaySunday:
 				title = NSLocalizedString(@"Weekends", @"Text for day type switcher");
 				break;
-			case 127:
+			case kEveryDay:
 				title = NSLocalizedString(@"Every day", @"Text for day type switcher");
 				break;
+			case kWorkdaysSundaysHolidays:
+				title = NSLocalizedString(@"Workdays, Sundays", @"Text for day type switcher");
+				break;				
 			default:
 				break;
 		}
 		
 		// add switcher
-		[daySwitcher insertSegmentWithTitle:title atIndex:i animated:NO];	
+		[daySwitcher insertSegmentWithTitle:title atIndex:segmentIndex animated:NO];	
 		
+		NSString* daysValid = [NSString stringWithFormat:@"%@", dayType];
 		// set selected if should be selected
-		if([dayType intValue] == self.currentDayType) {
-			daySwitcher.selectedSegmentIndex = i;
+		if([daysValid indexOf:currentDay] != -1) {
+			daySwitcher.selectedSegmentIndex = segmentIndex;
+			self.currentDayType = [dayType intValue];
 		}
 
-		i++;
+		segmentIndex++;
 	}
 }
 
-- (int)getDayByteValue {
-	int dayByteValue = 0;
+- (int)getDayOfWeek {
+	int dayOfWeek = 1;
 	NSDate* today = [NSDate date];
 	
-	NSDateFormatter* dateFormatter = [[NSDateFormatter alloc]init];
-	[dateFormatter setDateFormat:@"c"];
-	
-	int day = [[dateFormatter stringFromDate:today] intValue];
-	[dateFormatter release];
+	NSCalendar* cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents* weekdayComponents = [cal components:NSWeekdayCalendarUnit fromDate:today];
+	int day = [weekdayComponents weekday];
+	[cal release];
 
 	switch(day) {
 		case 1:
-			dayByteValue = 64;
+			dayOfWeek = 7;
 			break;
 		case 2:
-			dayByteValue = 1;
+			dayOfWeek = 1;
 			break;
 		case 3:
-			dayByteValue = 2;
+			dayOfWeek = 2;
 			break;
 		case 4:
-			dayByteValue = 4;
+			dayOfWeek = 3;
 			break;
 		case 5:
-			dayByteValue = 8;
+			dayOfWeek = 4;
 			break;
 		case 6:
-			dayByteValue = 16;
+			dayOfWeek = 5;
 			break;
 		case 7:
-			dayByteValue = 32;
+			dayOfWeek = 6;
 			break;
 		default:
-			dayByteValue = 0;
+			dayOfWeek = 1;
 			break;
 	}
 	
-	return dayByteValue;
+	return dayOfWeek;
 }
 
 /*
@@ -243,7 +246,7 @@ static const int kMinutesLabelSpacer = 3;
 	
 	static NSString* cellIdentifier = @"StopScheduleCellIdentifier";
 	
-	UITableViewCell* cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+	UITableViewCell* cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier];
 	[cell setUserInteractionEnabled:NO];
 	cell.backgroundView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
 	cell.backgroundView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
@@ -256,10 +259,15 @@ static const int kMinutesLabelSpacer = 3;
 	NSArray* keys = [[stopScheduleMap allKeys] sortedArrayUsingSelector:@selector(compare:)];
 	NSNumber* hours = [keys objectAtIndex:row];
 	
+	int hour = [hours intValue];
+	if(hour > 23) {
+		hour = hour % 24;
+	}
+	
 	UILabel* labelHours = [[UILabel alloc] init];
-	labelHours.text = [hours stringValue];
-	labelHours.font = [UIFont boldSystemFontOfSize:13];
-	labelHours.textColor = [UIColor colorWithRed:0/255.0 green:114/255.0 blue:187/255.0 alpha:1.0];
+	labelHours.text = [NSString stringWithFormat:@"%d", hour];
+	labelHours.font = [UIFont boldSystemFontOfSize:kMinutesFontSize];
+	labelHours.textColor = [UIColor colorForScheduleEntryHours];
 	labelHours.backgroundColor = [UIColor clearColor];
 
 	CGSize size = [labelHours.text sizeWithFont:labelHours.font constrainedToSize:CGSizeMake(9999, 9999)
@@ -272,16 +280,23 @@ static const int kMinutesLabelSpacer = 3;
 	lastRight = left + size.width + kMinutesLabelSpacer;
 	
 	// add minutes labels
-	NSArray* schedulesInHour = [stopScheduleMap objectForKey:hours];
-	StopSchedule* currentSchedule = nil;
-	NSEnumerator* en = [schedulesInHour objectEnumerator];
-	
-	while(currentSchedule = [en nextObject]) {
+	NSArray* schedulesInHour = [[stopScheduleMap objectForKey:hours] retain];	
+	for(StopSchedule* currentSchedule in schedulesInHour) {
 		
 		UILabel* labelMinutes = [[UILabel alloc] init];
-		labelMinutes.text = [currentSchedule.minutes stringValue];
-		labelMinutes.font = [UIFont systemFontOfSize:13];
-		labelMinutes.backgroundColor = [UIColor clearColor];
+		labelMinutes.text = [NSString stringWithFormat:@"%02d", [currentSchedule.minutes intValue]];
+		labelMinutes.font = [UIFont systemFontOfSize:kMinutesFontSize];
+		
+		if([currentSchedule.shortened boolValue] == YES || [currentSchedule.changed boolValue] == YES) {
+			labelMinutes.textColor = [UIColor colorForChangedScheduleEntry];
+		}
+		
+		if([currentSchedule.lowfloor boolValue] == YES) {
+			labelMinutes.backgroundColor = [UIColor colorForLowfloorScheduleEntry];
+		}
+		else {
+			labelMinutes.backgroundColor = [UIColor clearColor];
+		}
 		
 		CGSize size = [labelMinutes.text sizeWithFont:labelMinutes.font constrainedToSize:CGSizeMake(9999, 9999)
 									  lineBreakMode:labelMinutes.lineBreakMode];
@@ -292,7 +307,8 @@ static const int kMinutesLabelSpacer = 3;
 		
 		lastRight = lastRight + size.width + kMinutesLabelSpacer;
 	}
-	return cell;
+	[schedulesInHour release];
+	return [cell autorelease];
 }
 
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section {
@@ -321,13 +337,13 @@ static const int kMinutesLabelSpacer = 3;
 	
 	UILabel* transportTypeLabel = (UILabel*)[tableHeader viewWithTag:kHeaderTransportTypeTag];
 	transportTypeLabel.text = 
-	[[stop.direction.route.transportType.title stringByAppendingString:@" "]
-	 stringByAppendingString:stop.direction.route.number];
+	[[stop.route.transportType.title stringByAppendingString:@" "]
+	 stringByAppendingString:stop.route.number];
 	
 	NSString* directionName = nil;
-	NSArray* components = [stop.direction.name componentsSeparatedByString:@"-"];
+	NSArray* components = [stop.route.name componentsSeparatedByString:@"-"];
 	if([components count] < 2) {
-		directionName = stop.direction.name;
+		directionName = stop.route.name;
 	}
 	else {
 		directionName = [components objectAtIndex:1];
@@ -367,10 +383,7 @@ static const int kMinutesLabelSpacer = 3;
 
 - (void)calculateDayTypes {
 	NSMutableSet* daySet = [[NSMutableSet alloc] init];
-	NSEnumerator* stopSchedulesEnum = [stopSchedules objectEnumerator];
-	
-	StopSchedule* schedule;
-	while(schedule = [stopSchedulesEnum nextObject]) {
+	for(StopSchedule* schedule in stopSchedules) {
 		if(![daySet containsObject:schedule.daysValid]) {
 			[daySet addObject:schedule.daysValid];
 		}
@@ -385,14 +398,18 @@ static const int kMinutesLabelSpacer = 3;
 	NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	
 	int daysAdded = 0;
-	NSEnumerator* en = [stopSchedules objectEnumerator];
-	StopSchedule* schedule;
-	while(schedule = [en nextObject]) {
-		if(([schedule.daysValid intValue] & currentDayType) > 0) {
+	for(StopSchedule* schedule in stopSchedules) {
+		if(([schedule.daysValid intValue]) == currentDayType) {
 			unsigned int unitFlags = NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit;
 			
 			NSDateComponents* timeComponents = [calendar components:unitFlags fromDate:[NSDate date]];
-			[timeComponents setHour:[schedule.hours intValue]];
+			int hour = [schedule.hours intValue];
+			
+			if(hour > 23) {
+				hour = hour % 24;
+				[timeComponents setDay:1];
+			}
+			[timeComponents setHour:hour];
 			[timeComponents setMinute:[schedule.minutes intValue]];
 			[timeComponents setSecond:0];
 
@@ -422,7 +439,7 @@ static const int kMinutesLabelSpacer = 3;
 		// set first value, hide second
 		StopSchedule* nextDeparture = [aNextDepartures objectAtIndex:0];
 		UILabel* nextDepartureOneLabel = (UILabel*)[tableHeader viewWithTag:kHeaderNextDepartureOneTag];
-		nextDepartureOneLabel.text = [NSString stringWithFormat:@"%d:%d", 
+		nextDepartureOneLabel.text = [NSString stringWithFormat:@"%d:%02d", 
 									  [nextDeparture.hours intValue], [nextDeparture.minutes intValue]];
 		
 		UILabel* nextDepartureTwoLabel = (UILabel*)[tableHeader viewWithTag:kHeaderNextDepartureTwoTag];
@@ -433,12 +450,12 @@ static const int kMinutesLabelSpacer = 3;
 		// set first value, hide second
 		StopSchedule* nextDeparture = [aNextDepartures objectAtIndex:0];
 		UILabel* nextDepartureOneLabel = (UILabel*)[tableHeader viewWithTag:kHeaderNextDepartureOneTag];
-		nextDepartureOneLabel.text = [NSString stringWithFormat:@"%d:%d", 
+		nextDepartureOneLabel.text = [NSString stringWithFormat:@"%d:%02d", 
 									  [nextDeparture.hours intValue], [nextDeparture.minutes intValue]];
 		
 		StopSchedule* nextNextDeparture = [aNextDepartures objectAtIndex:1];
 		UILabel* nextDepartureTwoLabel = (UILabel*)[tableHeader viewWithTag:kHeaderNextDepartureTwoTag];
-		nextDepartureTwoLabel.text = [NSString stringWithFormat:@"%d:%d",
+		nextDepartureTwoLabel.text = [NSString stringWithFormat:@"%d:%02d",
 									  [nextNextDeparture.hours intValue], [nextNextDeparture.minutes intValue]];
 		[nextDepartureTwoLabel setHidden:NO];
 	}
@@ -451,21 +468,22 @@ static const int kMinutesLabelSpacer = 3;
 
 -(void) onAddToFavouritesPressed:(UIBarButtonItem*)sender {
 	UIAlertView* alert = [[UIAlertView alloc] init];
-	[alert setTitle:@"Confirm"];
-	[alert setMessage:@"Add to favourites?"];
+	[alert setTitle:NSLocalizedString(@"Confirm", @"Dialog title")];
+	[alert setMessage:NSLocalizedString(@"Add to favourites?", "Dialog prompt")];
 	[alert setDelegate:self];
-	[alert addButtonWithTitle:@"Yes"];
-	[alert addButtonWithTitle:@"No"];
+	[alert addButtonWithTitle:NSLocalizedString(@"No", "Button title")];
+	[alert addButtonWithTitle:NSLocalizedString(@"Yes", "Button title")];	
 	[alert show];
 	[alert release];
 }
 
 -(void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	City* city = [PreferencesService getCurrentCity];
 	
 	if (buttonIndex == kYes) {
 		DatabaseManager* db = [[DatabaseManager alloc] init];
 		[db open];
-		[db addStopToFavourites:stop];
+		[db addStopToFavourites:city stop:stop];
 		[db close];
 		[db release];
 	}

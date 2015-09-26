@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	NSArray* segments = [NSArray arrayWithObjects:@"Routes", @"Stops", nil];
+	NSArray* segments = [NSArray arrayWithObjects:NSLocalizedString(@"Routes", @"Tab title"), NSLocalizedString(@"Stops", @"Tab title"), nil];
 	
 	UISegmentedControl* aSegmentedControl = [[UISegmentedControl alloc] initWithItems:segments];
 	[aSegmentedControl setFrame:CGRectMake(0, 0, 280, 30)];
@@ -58,16 +58,22 @@
 	
 - (IBAction) onViewSwitched:(id)sender {
 	if(activeViewController) {
-		[activeViewController viewWillAppear:NO];
 		[activeViewController.view removeFromSuperview];
 		[activeViewController viewDidDisappear:NO];
 	}
 	
 	activeViewController = [segmentedViewControllers objectAtIndex:[segmentedControl selectedSegmentIndex]];
-	[activeViewController viewWillAppear:NO];
 	[self.view addSubview:activeViewController.view];
-	[activeViewController viewDidDisappear:NO];
+	[activeViewController viewWillAppear:NO];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+	if(activeViewController) {
+		[activeViewController viewWillAppear:NO];
+	}
+	[super viewWillAppear:animated];
+}
+
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animate {
 	[super setEditing:editing animated:animate];
@@ -75,14 +81,6 @@
 	if(activeViewController) {
 		[activeViewController setEditing:editing animated:animate];
 	}
-	
-	if(editing) {
-		NSLog(@"Table edit mode on");
-	}
-	else {
-		NSLog(@"Table edit mode off");
-	}
-	
 }
 
 /*

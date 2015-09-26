@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "StopSchedulesViewController.h"
-#import "Direction.h"
+#import "Route.h"
 #import "StopMapController.h"
+#import "MBProgressHUD.h"
 
 @interface StopsViewController : UITableViewController {
 	UITableViewCell* tableCell;
 	UIView* tableHeader;
-	Direction* direction;
+	Route* route;
 }
 
 @property (nonatomic, retain) NSArray* stops;
@@ -22,10 +23,13 @@
 @property (nonatomic, retain) StopSchedulesViewController* stopSchedulesView;
 @property (nonatomic, retain) StopMapController* stopMapController;
 @property (nonatomic, retain) IBOutlet UIView *tableHeader;
-@property (nonatomic, retain) Direction* direction;
+@property (nonatomic, retain) Route* route;
+@property (nonatomic, retain) MBProgressHUD* hud;
 
--(void)updateHeader;
--(IBAction)mapButtonPressed:(id)sender;
--(void) onAddToFavouritesPressed:(UIBarButtonItem*)sender;
+- (void)updateHeader;
+- (void) loadStops;
+- (void) updateTable;
+- (IBAction)mapButtonPressed:(id)sender;
+- (void) onAddToFavouritesPressed:(UIBarButtonItem*)sender;
 
 @end

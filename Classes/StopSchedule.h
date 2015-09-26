@@ -7,27 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Route.h"
+#import "Stop.h"	
 
 @interface StopSchedule : NSObject {
-	NSNumber *stopScheduleId;
-	NSNumber *timingId;
+	Stop *stop;
+	Route* route;
 	NSNumber *hours;
-	NSNumber *minutes;
+	NSNumber *minutes;	
 	NSNumber *daysValid;
 	NSNumber *lowfloor;
 	NSNumber *shortened;
+	NSNumber *changed;
 }
 
-@property (nonatomic, retain) NSNumber* stopScheduleId;
-@property (nonatomic, retain) NSNumber* timingId;
+@property (nonatomic, retain) Stop* stop;
+@property (nonatomic, retain) Route* route;
 @property (nonatomic, retain) NSNumber* hours;
 @property (nonatomic, retain) NSNumber* minutes;
 @property (nonatomic, retain) NSNumber* daysValid;
 @property (nonatomic, retain) NSNumber* lowfloor;
 @property (nonatomic, retain) NSNumber* shortened;
+@property (nonatomic, retain) NSNumber* changed;
 
-- (id)init:sid timingId:(NSNumber*)tid hours:(NSNumber*)hrs 
-   minutes:(NSNumber*)mins daysValid:(NSNumber*)valid lowfloor:(NSNumber*)isLow shortened:(NSNumber*)isShort;
+- (id)init:st route:(Route*)rt hours:(NSNumber*)hrs 
+   minutes:(NSNumber*)mins daysValid:(NSNumber*)valid lowfloor:(NSNumber*)isLow shortened:(NSNumber*)isShort changed:(NSNumber*)isChanged;
 
 @end

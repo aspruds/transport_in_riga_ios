@@ -10,6 +10,7 @@
 #import "StopsViewController.h"
 #import "RouteMapController.h"
 #import "Route.h"
+#import "MBProgressHUD.h"
 
 @interface DirectionsViewController : UITableViewController {
 	UITableViewCell* tableCell;
@@ -19,12 +20,15 @@
 
 @property (nonatomic, retain) NSArray* directions;
 @property (nonatomic, retain) IBOutlet UITableViewCell* tableCell;
+@property (nonatomic, retain) IBOutlet UIView* tableHeader;
 @property (nonatomic, retain) StopsViewController* stopsView;
 @property (nonatomic, retain) RouteMapController* routeMapController;
-@property (nonatomic, retain) IBOutlet UIView* tableHeader;
 @property (nonatomic, retain) Route* route;
+@property (nonatomic, retain) MBProgressHUD* hud;
 
 -(void)updateHeader;
+-(void) loadDirections;
+-(void) updateTable;
 -(IBAction)mapButtonPressed:(id)sender;
 -(void) onAddToFavouritesPressed:(UIBarButtonItem*)sender;
 
